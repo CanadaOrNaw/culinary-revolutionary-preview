@@ -1,0 +1,57 @@
+[
+  {
+    "file": "public/assets/logo.png",
+    "source_url": "https://static.wixstatic.com/media/9b835a_06dccdb45ec84528b1a37e500f459601~mv2.png",
+    "bytes": 1595823
+  },
+  {
+    "file": "public/assets/hero.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_99948c5e32d541c68fe3150e25b9aa5d~mv2.jpg/v1/fill/w_1024,h_606,al_c,q_85,enc_avif,quality_auto/ai-generated-IMAGE.jpg",
+    "bytes": 61018
+  },
+  {
+    "file": "public/assets/service-private-chef.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_9be585abaaeb4a4f81fff317d287fce1~mv2.jpg/v1/fill/w_465,h_311,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/9b835a_9be585abaaeb4a4f81fff317d287fce1~mv2.jpg",
+    "bytes": 30760
+  },
+  {
+    "file": "public/assets/service-catering.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_ac9ef38e9f774ddcb56d990c14e2b8d5~mv2.jpg/v1/fill/w_465,h_311,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/9b835a_ac9ef38e9f774ddcb56d990c14e2b8d5~mv2.jpg",
+    "bytes": 36075
+  },
+  {
+    "file": "public/assets/service-meal-prep.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_19f5beeb5e3241fe951158ae3d8b33c8~mv2.jpg/v1/fill/w_465,h_311,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/9b835a_19f5beeb5e3241fe951158ae3d8b33c8~mv2.jpg",
+    "bytes": 41007
+  },
+  {
+    "file": "public/assets/service-classes.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_32c8c4ece814459e88c341843676cb3f~mv2.jpg/v1/fill/w_465,h_311,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/9b835a_32c8c4ece814459e88c341843676cb3f~mv2.jpg",
+    "bytes": 39241
+  },
+  {
+    "file": "public/assets/service-consulting.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_f41ea246a4fc4b10b2615e0dccea66d9~mv2.jpg/v1/fill/w_465,h_311,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/9b835a_f41ea246a4fc4b10b2615e0dccea66d9~mv2.jpg",
+    "bytes": 37787
+  },
+  {
+    "file": "public/assets/about-chef-1.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_1cd2a7a559c643768548ef2a823b6de9~mv2.jpeg/v1/fill/w_563,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0278.jpeg",
+    "bytes": 53718
+  },
+  {
+    "file": "public/assets/about-chef-2.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_7bb2c78987e84ce7874f4e1e0d471f6f~mv2.jpg/v1/fill/w_563,h_419,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0748.jpg",
+    "bytes": 61907
+  },
+  {
+    "file": "public/assets/about-chef-3.jpg",
+    "source_url": "https://static.wixstatic.com/media/9b835a_76991629c04c48de8419a6a1b4a85267~mv2.jpeg/v1/fill/w_563,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_6897.jpeg",
+    "bytes": 46291
+  },
+  {
+    "file": "public/assets/source-home-full.png",
+    "source_url": "https://storage.googleapis.com/firecrawl-scrape-media/screenshot-5188a77a-d965-4b1d-9a62-17a53e08b433.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1785106079&Signature=X9B%2BaiGkKMXzn8ASRyGsWes9F1HqAvGOMtnRuAIHORFwdGc77iIMkgX7Jeq9Vi8r5RcoxzuB5eKCLroXmIX6udcqiclm4DS59NZS%2FyfctmdLae8JufhO6k4p%2F9K%2F4pW%2FulNCSwPCnEol2vHMgbnSl4aG5BWw2%2FFyXPuzwVaQYs0fQI0p0gVuv12K3rpR3xk%2BLCEDZCzMqFXUA3z3TzpNVsYqLA3JLYpFfusTqSvjmGlsoo%2B2Y9k4FtG1ac3QBD8wZGRE69IvXaitJzLmY2JJOzC6IUyHh21PgU1Hm%2FP98Qx2X%2FWUNPlmp22FtI3tFiBAaWPpNFmQD2NWiz7%2F0OXszw%3D%3D",
+    "bytes": 400314
+  }
+]
