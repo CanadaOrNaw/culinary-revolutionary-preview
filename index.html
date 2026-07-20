@@ -29,7 +29,14 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Critical icon layout stays inline so stale browser CSS can never expose the SVG sprite. */
+    .icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .social-links { display: flex; align-items: center; gap: 0.15rem; margin: 0; padding: 0; list-style: none; }
+    .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; }
+    .social-links svg { display: block; width: 20px; height: 20px; fill: currentColor; }
+  </style>
+  <link rel="stylesheet" href="styles.css?v=20260720-2" />
 </head>
 <body>
   <a class="skip-link" href="#home">Skip to content</a>
@@ -448,6 +455,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260720-2"></script>
 </body>
 </html>
