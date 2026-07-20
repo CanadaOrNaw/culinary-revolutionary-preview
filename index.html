@@ -8,30 +8,53 @@
     name="description"
     content="Culinary Revolutionary provides private chef services, catering, meal preparation, cooking classes, and restaurant consultation in Florida."
   />
+  <meta name="theme-color" content="#0a1f44" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Culinary Revolutionary" />
+  <meta property="og:title" content="Culinary Revolutionary | Private Chef &amp; Catering in Florida" />
+  <meta
+    property="og:description"
+    content="Private chef services, catering, meal preparation, cooking classes, and restaurant consultation in Florida."
+  />
+  <meta property="og:image" content="public/assets/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="public/assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="concept-banner">Concept preview — not the live website</div>
   <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Icon sprite: referenced by <use> in the header and footer. -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/>
+    </symbol>
+  </svg>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Culinary Revolutionary home">
         <img
-          src="public/assets/logo.png"
+          src="public/assets/logo-256.png"
           alt="Culinary Revolutionary logo"
+          width="48"
+          height="48"
         />
         <span>Culinary Revolutionary</span>
       </a>
-      <button
-        id="menu-toggle"
-        class="menu-toggle"
-        type="button"
-        aria-controls="primary-nav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        Menu
-      </button>
       <nav id="primary-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -41,6 +64,42 @@
           <li><a href="#inquiry">Inquiry</a></li>
         </ul>
       </nav>
+      <div class="header-actions">
+        <ul class="social-links" aria-label="Culinary Revolutionary on social media">
+          <li>
+            <a
+              href="https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Culinary Revolutionary on Facebook"
+              title="Facebook"
+            >
+              <svg aria-hidden="true" focusable="false"><use href="#icon-facebook" /></svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/culinary_revolutionary_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Culinary Revolutionary on Instagram"
+              title="Instagram"
+            >
+              <svg aria-hidden="true" focusable="false"><use href="#icon-instagram" /></svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+      </div>
     </div>
   </header>
 
@@ -207,15 +266,37 @@
         </div>
 
         <aside class="proof-box">
+          <p class="eyebrow">Career Highlights</p>
           <h3>A career worth showing</h3>
-          <p>
-            This section is ready for verified client reviews, award details, and press coverage once the final source material is available.
-          </p>
-          <ul class="proof-list">
-            <li>Verified client testimonials</li>
-            <li>Award names, years, and competition photography</li>
-            <li>Press features and professional affiliations</li>
+
+          <ul class="stat-list">
+            <li>
+              <span class="stat-value">30+</span>
+              <span class="stat-label">Years in professional kitchens</span>
+            </li>
+            <li>
+              <span class="stat-value">30+</span>
+              <span class="stat-label">Cooking competitions</span>
+            </li>
+            <li>
+              <span class="stat-value">2</span>
+              <span class="stat-label">James Beard nominations</span>
+            </li>
           </ul>
+
+          <h4 class="proof-subhead">Selected kitchens</h4>
+          <ul class="proof-list">
+            <li>The French Laundry</li>
+            <li>Big Sky</li>
+            <li>Bensi</li>
+            <li>Mexican Radio</li>
+            <li>Amore Italiano</li>
+          </ul>
+
+          <p class="proof-footnote">
+            Formal training at Johnson &amp; Wales University. References, competition
+            photography, and client testimonials available on request.
+          </p>
         </aside>
       </div>
     </section>
@@ -228,9 +309,31 @@
           Submit your details and preferred event type to check availability.
         </p>
         <div class="inquiry-layout">
-          <form id="inquiry-form" class="inquiry-form" novalidate>
+          <form
+            id="inquiry-form"
+            class="inquiry-form"
+            action="https://formsubmit.co/chef.jbmartin67@gmail.com"
+            method="POST"
+          >
+            <!-- FormSubmit configuration. Fields beginning with an underscore are
+                 instructions to the mail service and are never shown to the visitor. -->
+            <input type="hidden" name="_subject" value="New website inquiry — Culinary Revolutionary" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://canadaornaw.github.io/culinary-revolutionary-preview/thank-you.html"
+            />
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thank you for contacting Culinary Revolutionary. Chef JB Martin has received your inquiry and will reply with availability and next steps, normally within one to two business days. If your date is close or your plans change, call or text (239) 507-3175."
+            />
+            <!-- Honeypot: bots fill it, people never see it. -->
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
             <label for="name">Full name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
+            <input id="name" name="Name" type="text" autocomplete="name" required />
 
             <label for="email">Email</label>
             <input
@@ -242,33 +345,36 @@
             />
 
             <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            <input id="phone" name="Phone" type="tel" autocomplete="tel" />
 
             <label for="event-type">Service type</label>
-            <select id="event-type" name="event-type">
-              <option value="private-chef">Private Chef</option>
-              <option value="catering">Catering</option>
-              <option value="meal-prep">Meal Preparation</option>
-              <option value="class">In-Home Cooking Class</option>
-              <option value="consultation">Restaurant Consultation</option>
+            <select id="event-type" name="Service">
+              <option>Private Chef</option>
+              <option>Catering</option>
+              <option>Meal Preparation</option>
+              <option>In-Home Cooking Class</option>
+              <option>Restaurant Consultation</option>
             </select>
 
             <label for="guests">Guest count (estimate)</label>
-            <input id="guests" name="guests" type="number" min="1" />
+            <input id="guests" name="Guests" type="number" min="1" />
 
             <label for="event-date">Preferred date</label>
-            <input id="event-date" name="event-date" type="date" />
+            <input id="event-date" name="Preferred date" type="date" />
 
             <label for="notes">Project notes</label>
             <textarea
               id="notes"
-              name="notes"
+              name="Notes"
               rows="4"
               placeholder="Style, dietary needs, timing, and any must-include favorites."
             ></textarea>
 
-            <button type="submit" class="button primary">Send inquiry</button>
+            <button id="inquiry-submit" type="submit" class="button primary">Send inquiry</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+            <p class="form-privacy">
+              Submitted securely through FormSubmit and emailed to Chef JB Martin. Please do not include payment information.
+            </p>
           </form>
 
           <address class="contact-card">
@@ -276,6 +382,36 @@
             <p>Florida, USA</p>
             <a href="tel:+12395073175">(239) 507-3175</a>
             <a href="mailto:chef.jbmartin67@gmail.com">chef.jbmartin67@gmail.com</a>
+
+            <p class="contact-note">
+              Prefer to talk it through? Call or text — dates, headcount, and dietary
+              needs are easiest to sort out in a two-minute conversation.
+            </p>
+
+            <ul class="social-links contact-social" aria-label="Culinary Revolutionary on social media">
+              <li>
+                <a
+                  href="https://www.instagram.com/culinary_revolutionary_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Culinary Revolutionary on Instagram"
+                  title="Instagram"
+                >
+                  <svg aria-hidden="true" focusable="false"><use href="#icon-instagram" /></svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Culinary Revolutionary on Facebook"
+                  title="Facebook"
+                >
+                  <svg aria-hidden="true" focusable="false"><use href="#icon-facebook" /></svg>
+                </a>
+              </li>
+            </ul>
           </address>
         </div>
       </div>
@@ -285,7 +421,30 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 Culinary Revolutionary</p>
-      <p><a href="https://www.instagram.com/culinary_revolutionary_">Instagram</a> · <a href="https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/">Facebook</a></p>
+      <ul class="social-links footer-social" aria-label="Culinary Revolutionary on social media">
+        <li>
+          <a
+            href="https://www.instagram.com/culinary_revolutionary_"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Culinary Revolutionary on Instagram"
+            title="Instagram"
+          >
+            <svg aria-hidden="true" focusable="false"><use href="#icon-instagram" /></svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Culinary Revolutionary on Facebook"
+            title="Facebook"
+          >
+            <svg aria-hidden="true" focusable="false"><use href="#icon-facebook" /></svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 
