@@ -34,23 +34,53 @@
   /* ---------------------------------------------------------------
      Inquiry form
 
-     This is progressive enhancement only. The real HTML form action
-     remains the delivery path, so the inquiry works without JavaScript.
-     FormSubmit handles spam verification, email delivery, and redirecting
-     to thank-you.html after a successful submission.
+     The site has no server-side runtime. Build a clean mailto draft from
+     the visitor's fields instead of relying on a third-party form endpoint.
+     The visitor reviews the draft and explicitly presses Send in their own
+     email app.
      --------------------------------------------------------------- */
 
   if (!inquiryForm) return;
 
-  inquiryForm.addEventListener("submit", () => {
+  const clean = (value) => String(value || "").trim();
+
+  inquiryForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!inquiryForm.reportValidity()) return;
+
+    const data = new FormData(inquiryForm);
+    const name = clean(data.get("Name"));
+    const email = clean(data.get("email"));
+    const subject = `Website inquiry from ${name || "a prospective client"}`;
+    const body = [
+      "Hello Chef JB Martin,",
+      "",
+      "I would like to inquire about Culinary Revolutionary services.",
+      "",
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${clean(data.get("Phone")) || "Not provided"}`,
+      `Service: ${clean(data.get("Service")) || "Not specified"}`,
+      `Guest count: ${clean(data.get("Guests")) || "Not specified"}`,
+      `Preferred date: ${clean(data.get("Preferred date")) || "Not specified"}`,
+      "",
+      "Project notes:",
+      clean(data.get("Notes")) || "None provided",
+      "",
+      "Thank you."
+    ].join("\n");
+
     formStatus.hidden = false;
-    formStatus.textContent = "Sending your inquiry securely…";
+    formStatus.textContent = "Opening a pre-filled message in your email app…";
     formStatus.classList.add("is-pending");
-    submitButton.disabled = true;
+
+    const mailto = new URL("mailto:chef.jbmartin67@gmail.com");
+    mailto.searchParams.set("subject", subject);
+    mailto.searchParams.set("body", body);
+    window.location.href = mailto.toString();
   });
 
-  // Browsers may restore the page from their back/forward cache.
-  // Never leave the submit button disabled when the visitor returns.
   window.addEventListener("pageshow", () => {
     submitButton.disabled = false;
     formStatus.hidden = true;

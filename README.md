@@ -12,7 +12,7 @@ Open `http://127.0.0.1:8096/`.
 
 ## Files
 - `index.html`, `styles.css`, `script.js` — the site
-- `thank-you.html` — inquiry confirmation page
+- `thank-you.html` — retained static confirmation/fallback page
 - `public/assets/` — locally copied public website assets
 - `ASSET-SOURCES.json` — exact source URLs and file sizes
 - `DESIGN.md` — extracted design system and implementation rules
@@ -20,22 +20,20 @@ Open `http://127.0.0.1:8096/`.
 
 ## Inquiry form
 
-The form posts to [FormSubmit](https://formsubmit.co) — a hosted relay that turns a static
-form into an email. No account, no backend, no keys in the repo.
+This repository is a static site with no server-side runtime. The inquiry form therefore
+builds a pre-filled `mailto:` message addressed to `chef.jbmartin67@gmail.com` instead of
+posting visitor data to a third-party form relay.
 
-- Submissions are emailed to `chef.jbmartin67@gmail.com` as a formatted table.
-- The visitor receives an automatic acknowledgement (`_autoresponse` in `index.html`).
-- FormSubmit's default reCAPTCHA and a hidden honeypot field (`_honey`) reduce spam.
-- The browser uses a normal HTML form POST and redirects to `thank-you.html` after success,
-  so delivery does not depend on JavaScript. `script.js` only adds a sending state.
+- The visitor completes the fields and selects **Open email draft**.
+- `script.js` formats the service, date, guest count, contact details, and notes into a
+  readable subject and email body.
+- The visitor's configured email application opens the draft; the visitor reviews it and
+  explicitly presses Send.
+- No form data is stored by the website or passed through an external form provider.
 
-**One-time activation:** the *first* submission causes FormSubmit to email a confirmation
-link to `chef.jbmartin67@gmail.com`. Until someone with access to that inbox clicks it,
-no inquiries are delivered. Send one test submission, click the link, then send a second
-to confirm delivery end to end.
-
-To change the destination address, edit the form `action` in `index.html`. If the public
-site URL changes, update the hidden `_next` redirect URL as well.
+To change the destination address, update both the form `action` in `index.html` and the
+`mailto:` address in `script.js`. A true one-click web submission would require an approved
+serverless/backend form service and its account credentials.
 
 ## Before launch
 Confirm the business owner's permission for imagery, logo, copy, and the credentials

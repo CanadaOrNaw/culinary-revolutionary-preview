@@ -319,25 +319,9 @@
           <form
             id="inquiry-form"
             class="inquiry-form"
-            action="https://formsubmit.co/chef.jbmartin67@gmail.com"
-            method="POST"
+            action="mailto:chef.jbmartin67@gmail.com"
+            method="GET"
           >
-            <!-- FormSubmit configuration. Fields beginning with an underscore are
-                 instructions to the mail service and are never shown to the visitor. -->
-            <input type="hidden" name="_subject" value="New website inquiry — Culinary Revolutionary" />
-            <input type="hidden" name="_template" value="table" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://canadaornaw.github.io/culinary-revolutionary-preview/thank-you.html"
-            />
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for contacting Culinary Revolutionary. Chef JB Martin has received your inquiry and will reply with availability and next steps, normally within one to two business days. If your date is close or your plans change, call or text (239) 507-3175."
-            />
-            <!-- Honeypot: bots fill it, people never see it. -->
-            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
             <label for="name">Full name</label>
             <input id="name" name="Name" type="text" autocomplete="name" required />
@@ -377,10 +361,10 @@
               placeholder="Style, dietary needs, timing, and any must-include favorites."
             ></textarea>
 
-            <button id="inquiry-submit" type="submit" class="button primary">Send inquiry</button>
+            <button id="inquiry-submit" type="submit" class="button primary">Open email draft</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
             <p class="form-privacy">
-              Submitted securely through FormSubmit and emailed to Chef JB Martin. Please do not include payment information.
+              This opens a pre-filled message in your email app addressed directly to Chef JB Martin. Review it, then press Send. Please do not include payment information.
             </p>
           </form>
 
@@ -455,6 +439,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260720-2"></script>
+  <script src="script.js?v=20260720-3"></script>
 </body>
 </html>
