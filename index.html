@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Private Chef in Naples &amp; Fort Myers | Culinary Revolutionary</title>
+  <title>Private Chef on South Florida's Gulf Coast | Culinary Revolutionary</title>
   <meta
     name="description"
-    content="Chef JB Martin cooks in your home across Naples, Fort Myers and Southwest Florida: private dinners, event catering and weekly meal prep. Call (239) 507-3175."
+    content="Chef JB Martin brings private dinners, event catering, weekly meal prep and cooking classes to homes across South Florida's Gulf Coast. Call (239) 507-3175."
   />
   <meta name="theme-color" content="#0a1f44" />
   <link rel="canonical" href="https://www.culinary-revolutionary.com/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Culinary Revolutionary" />
-  <meta property="og:title" content="Private Chef in Naples &amp; Fort Myers | Culinary Revolutionary" />
+  <meta property="og:title" content="Private Chef on South Florida's Gulf Coast | Culinary Revolutionary" />
   <meta
     property="og:description"
-    content="Chef JB Martin cooks in your home across Naples, Fort Myers and Southwest Florida: private dinners, event catering and weekly meal prep."
+    content="Chef JB Martin brings private dinners, event catering, weekly meal prep and cooking classes to homes across South Florida's Gulf Coast."
   />
   <meta property="og:image" content="https://www.culinary-revolutionary.com/public/assets/hero.jpg" />
   <meta property="og:image:alt" content="Chef JB Martin plating a private dinner course." />
@@ -44,9 +44,10 @@
   <!--
     Structured data. Tells Google this is a service-area business (a chef who
     travels to you), not a restaurant. Deliberately omits ratings, reviews, and
-    awards: inventing them is a manual-action risk, and the James Beard /
-    Johnson & Wales claims are unverified — see README before adding them here.
-    CONFIRM WITH CLIENT: the areaServed city list and priceRange.
+    awards: the site's service offering is enough here, and omitting promotional
+    claims keeps the markup focused. The broad service region is supported by
+    the chef's public Airbnb service listing; no unconfirmed city or street
+    address is asserted.
   -->
   <script type="application/ld+json">
   {
@@ -57,7 +58,7 @@
         "@id": "https://www.culinary-revolutionary.com/#business",
         "name": "Culinary Revolutionary",
         "alternateName": "Culinary Revolutionary — Chef JB Martin",
-        "description": "Private chef, catering, meal preparation, in-home cooking classes and restaurant consultation serving Naples, Fort Myers and Southwest Florida.",
+        "description": "Private chef, catering, meal preparation, in-home cooking classes and restaurant consultation serving South Florida's Gulf Coast.",
         "url": "https://www.culinary-revolutionary.com/",
         "telephone": "+1-239-507-3175",
         "logo": "https://www.culinary-revolutionary.com/public/assets/logo-256.png",
@@ -66,22 +67,16 @@
           "https://www.culinary-revolutionary.com/public/assets/service-private-chef.jpg",
           "https://www.culinary-revolutionary.com/public/assets/service-catering.jpg"
         ],
-        "priceRange": "$$$",
         "currenciesAccepted": "USD",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Naples",
-          "addressRegion": "FL",
-          "addressCountry": "US"
+        "areaServed": {
+          "@type": "Place",
+          "name": "South Florida Gulf Coast",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+          }
         },
-        "areaServed": [
-          { "@type": "City", "name": "Naples", "addressRegion": "FL" },
-          { "@type": "City", "name": "Fort Myers", "addressRegion": "FL" },
-          { "@type": "City", "name": "Bonita Springs", "addressRegion": "FL" },
-          { "@type": "City", "name": "Estero", "addressRegion": "FL" },
-          { "@type": "City", "name": "Marco Island", "addressRegion": "FL" },
-          { "@type": "City", "name": "Cape Coral", "addressRegion": "FL" }
-        ],
         "sameAs": [
           "https://www.instagram.com/culinary_revolutionary_",
           "https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/"
@@ -205,7 +200,7 @@
       </div>
       <div class="container hero-content">
         <p class="eyebrow">Chef JB Martin</p>
-        <h1>Private Chef &amp; Catering in Naples, Fort Myers &amp; Southwest Florida</h1>
+        <h1>Private Chef &amp; Catering on South Florida's Gulf Coast</h1>
         <p class="hero-subline">
           Elegant, practical food experiences built for your home, event, and
           calendar. You choose the menu, dining pace, and style; I handle the
@@ -282,10 +277,9 @@
         <p class="eyebrow">Service Area</p>
         <h2>Where I cook</h2>
         <p class="section-intro">
-          I travel to you across Southwest Florida — Naples, Fort Myers, Bonita Springs,
-          Estero, Marco Island, and Cape Coral, plus the communities in between. If your
-          address sits outside that range, ask anyway; longer trips are often workable
-          for full-day events.
+          I travel to homes and event spaces across South Florida's Gulf Coast. Send the
+          event city or ZIP with your inquiry so I can confirm travel and availability;
+          longer trips are often workable for full-day events.
         </p>
 
         <h3 class="dietary-head">Dietary needs are planned in, not worked around</h3>
@@ -497,7 +491,6 @@
               name="botcheck"
               id="botcheck"
               tabindex="-1"
-              autocomplete="off"
               aria-hidden="true"
             />
 
@@ -532,7 +525,7 @@
               type="text"
               autocomplete="address-level2"
               required
-              placeholder="Naples, Bonita Springs, 34102…"
+              placeholder="City or ZIP"
             />
 
             <label for="menu-interest">Menu of interest <span class="label-optional">(optional)</span></label>
@@ -587,7 +580,7 @@
             </p>
           </form>
 
-          <address class="contact-card">
+          <aside class="contact-card" aria-label="Direct contact">
             <h3>Direct contact</h3>
             <p>Florida, USA</p>
             <a href="tel:+12395073175">(239) 507-3175</a>
@@ -622,7 +615,7 @@
                 </a>
               </li>
             </ul>
-          </address>
+          </aside>
         </div>
       </div>
     </section>

@@ -79,26 +79,18 @@ Because publishing uses **GitHub Actions** (not branch-based publishing), the cu
 is set in **Settings → Pages**, and any `CNAME` file in the repo is ignored. Do not rely on
 a `CNAME` file to set the domain.
 
-## Before launch — items needing the client's confirmation
+## Source and confirmation notes
 
-These are unverified or assumed. None of them are safe to publish on a commercial site
-without a yes from the chef.
+The biography claims in the About section are taken from the client's existing live
+About page and are independently repeated on the chef's Airbnb service listing. They
+are client-supplied claims, not additions made by this redesign.
 
-**Claims presented as fact** (currently live in the About section and Career Highlights):
-- Two James Beard nominations — category and year. James Beard records are public and
-  searchable, so a wrong claim is trivially disproved.
-- Experience at The French Laundry, Bensi, Mexican Radio, Amore Italiano, Big Sky.
-- Formal training at Johnson & Wales University.
-- 30+ years in professional kitchens; 30+ cooking competitions.
+The former draft inferred a six-city service area and Naples address from the 239 phone
+number. That inference has been removed. The site now uses the broader, publicly listed
+"South Florida Gulf Coast" service area and asks each lead for a city or ZIP. Add city
+landing copy only after the chef confirms the exact travel area.
 
-**Assumed, not stated** (inferred from the 239 area code — change in one place each):
-- Service area: Naples, Fort Myers, Bonita Springs, Estero, Marco Island, Cape Coral.
-  Appears in the `#service-area` section, the About fact list, the title/meta description,
-  and the JSON-LD `areaServed`.
-- `priceRange: "$$$"` in the JSON-LD.
-- `addressLocality: "Naples"` in the JSON-LD.
-
-**Missing, and worth adding** (both unblock higher-value bookings):
+**Missing, and worth adding** (these help higher-value bookings):
 - Food-safety certification (ServSafe or Florida food handler) — not currently claimed.
 - Liability insurance and whether a certificate can be issued to a venue. Corporate and
   wedding clients frequently cannot book without one.

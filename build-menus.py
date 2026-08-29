@@ -68,7 +68,7 @@ page = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Menus | Culinary Revolutionary — Private Chef, Southwest Florida</title>
+  <title>Sample Menus | Culinary Revolutionary</title>
   <meta
     name="description"
     content="Seven sample menus from Chef JB Martin: Italian, brunch, Spanish, Key West, wild game, tapas, and vegetarian. Every menu is customizable — choose your courses and dishes."
@@ -79,7 +79,7 @@ page = f'''<!DOCTYPE html>
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Culinary Revolutionary" />
   <meta property="og:title" content="Sample Menus | Culinary Revolutionary" />
-  <meta property="og:description" content="Seven customizable sample menus from a private chef serving Southwest Florida." />
+  <meta property="og:description" content="Seven customizable sample menus from a private chef serving South Florida's Gulf Coast." />
   <meta property="og:image" content="https://www.culinary-revolutionary.com/public/assets/hero.jpg" />
   <meta property="og:url" content="https://www.culinary-revolutionary.com/menus.html" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -171,7 +171,7 @@ for m in menus:
 
 idx = (REPO / "index.html").read_text()
 start = idx.index('        <div class="menus-grid">')
-end = idx.index('        </div>', idx.index('<a class="text-link menu-request" href="#inquiry">Request a menu like this →</a>\n          </article>')) + len('        </div>\n')
+end = idx.index('        <p class="menus-cta">', start)
 idx = (idx[:start]
        + '        <div class="menus-grid">\n' + "\n".join(cards) + '\n        </div>\n'
        + idx[end:])

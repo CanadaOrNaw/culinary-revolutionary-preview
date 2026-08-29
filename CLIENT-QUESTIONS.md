@@ -1,18 +1,18 @@
 # Questions for Chef JB Martin
 
-Everything here needs a yes/no or a value before the site goes live. Grouped by how
-much it matters.
+These answers would strengthen the site, but the launch build avoids inventing facts
+where they are not yet available.
 
 ---
 
-## 1. Must answer — legal / reputational risk
+## 1. Biography details worth strengthening
 
-These are on the page right now, stated as fact, and none of them are documented.
-If any cannot be substantiated it should come off the site before launch, not after.
+These statements are on the client's existing live About page and are repeated on the
+chef's Airbnb service listing. More detail would make them more credible:
 
 | Claim on the site | Need |
 |---|---|
-| **Two James Beard nominations** | Category and year for each. These records are public and searchable — a wrong claim is trivially disproved. |
+| **Two James Beard nominations** | Category and year for each. |
 | **The French Laundry** | Confirm, and roughly when / in what role. |
 | Bensi, Mexican Radio, Amore Italiano, Big Sky | Confirm each. |
 | **Johnson & Wales University** | Confirm — degree or program, and roughly when. |
@@ -20,11 +20,11 @@ If any cannot be substantiated it should come off the site before launch, not af
 | 30+ cooking competitions | Confirm. |
 | Photos and logo currently on the site | Confirm we have the right to use them (they were taken from the existing Wix site). |
 
-## 2. Must answer — the site is wrong without it
+## 2. Operational details
 
-**Service area.** The site currently says Naples, Fort Myers, Bonita Springs, Estero,
-Marco Island, and Cape Coral. That was inferred from the 239 area code — it is a guess.
-What is the real travel radius? Is there a distance beyond which there's a travel fee?
+**Service area.** The site now uses the publicly listed "South Florida Gulf Coast"
+region without inventing individual cities. What is the normal travel radius? Is there
+a distance beyond which there's a travel fee?
 
 **Where inquiries should go.** Right now: `chef.jbmartin67@gmail.com`. Keep it, or switch
 to a new business address on the domain?
