@@ -24,13 +24,32 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      # Stage only the files that belong on a public business domain.
+      # Uploading the repo root would also publish README.md, DESIGN.md,
+      # ASSET-SOURCES.json and the menu generator — build notes and tooling,
+      # not site content.
+      - name: Stage the site
+        run: |
+          mkdir -p _site/public/assets
+          cp index.html menus.html thank-you.html styles.css script.js _site/
+          cp favicon.ico robots.txt sitemap.xml _site/
+          cp .nojekyll _site/
+          # CNAME is only present after the custom domain cutover.
+          [ -f CNAME ] && cp CNAME _site/ || true
+          # logo.png is the 1.5 MB original; every page references logo-256.png.
+          rsync -a --exclude 'logo.png' --exclude 'source-home-full.png' \
+            public/assets/ _site/public/assets/
+          echo "--- staged artifact ---"
+          find _site -type f | sort
+          du -sh _site
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to Pages
         id: deployment

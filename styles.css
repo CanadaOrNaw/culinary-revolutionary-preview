@@ -4,6 +4,9 @@
   --white: #ffffff;
   --cream: #f6f1e8;
   --gold: #c7a35a;
+  /* --gold is 2.1:1 on cream — fine on navy, fails WCAG on light
+     grounds. Use --gold-ink for gold-coloured text on cream/white. */
+  --gold-ink: #866620;
   --surface: #ffffff;
   --text: #15233b;
   --shadow: 0 16px 40px rgba(10, 31, 68, 0.16);
@@ -15,9 +18,11 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
+  /* Offsets in-page anchor jumps so the sticky header never covers the
+     heading that was jumped to. */
+  scroll-padding-top: 6.5rem;
 }
 
 body {
@@ -106,6 +111,7 @@ body {
 
 .skip-link {
   position: absolute;
+  z-index: 100;
   left: -9999px;
   top: 0.5rem;
   background: var(--gold);
@@ -188,13 +194,22 @@ h3 {
   margin: 1rem 0 0;
 }
 
+/* Default eyebrow sits on cream/white, so it uses the darker ink. The
+   hero and other navy panels override it back to the bright gold. */
 .eyebrow {
-  color: var(--gold);
+  color: var(--gold-ink);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.74rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.hero .eyebrow,
+.menus-outro .eyebrow,
+.contact-card .eyebrow,
+.proof-box .eyebrow {
+  color: var(--gold);
 }
 
 .hero-subline {
@@ -259,7 +274,7 @@ h3 {
   margin-top: 1.5rem;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .menu-card ul {
@@ -340,6 +355,7 @@ textarea {
 }
 
 .contact-card {
+  font-style: normal;
   background: var(--navy);
   color: var(--white);
   border-radius: 0.9rem;
@@ -371,13 +387,25 @@ textarea {
   gap: 0.75rem;
 }
 
+/* Two-tone ring: navy carries the contrast on light grounds, the gold
+   halo carries it on navy ones, so one rule works everywhere. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--navy);
   outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(199, 163, 90, 0.7);
+}
+
+.site-header a:focus-visible,
+.site-footer a:focus-visible,
+.contact-card a:focus-visible,
+.menus-outro a:focus-visible,
+.hero a:focus-visible {
+  outline-color: var(--gold);
+  box-shadow: 0 0 0 5px rgba(10, 31, 68, 0.6);
 }
 
 @media (max-width: 900px) {
@@ -399,17 +427,22 @@ textarea:focus-visible {
     pointer-events: none;
     max-height: 0;
     overflow: hidden;
+    /* visibility (not just opacity) keeps the closed menu out of the tab
+       order and the accessibility tree, matching aria-expanded="false". */
+    visibility: hidden;
     transition:
       opacity 0.2s ease,
       transform 0.2s ease,
-      max-height 0.2s ease;
+      max-height 0.2s ease,
+      visibility 0.2s ease;
   }
 
   #primary-nav.open {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    max-height: 280px;
+    max-height: 320px;
+    visibility: visible;
   }
 
   #primary-nav ul {
@@ -562,8 +595,8 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 999px;
   color: var(--white);
   text-decoration: none;
@@ -734,11 +767,6 @@ textarea:focus-visible {
 }
 
 @media (max-width: 390px) {
-  .social-links a {
-    width: 2.15rem;
-    height: 2.15rem;
-  }
-
   .footer-inner {
     align-items: flex-start;
   }
@@ -776,4 +804,316 @@ textarea:focus-visible {
 .thanks-note a {
   color: var(--navy);
   font-weight: 700;
+}
+
+/* ---------------------------------------------------------------
+   Sample menu cards (homepage teaser grid)
+   --------------------------------------------------------------- */
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card .menu-teaser {
+  margin: 0 0 0.9rem;
+  color: var(--slate);
+  font-size: 0.95rem;
+}
+
+.menu-card .menu-courses {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.menu-card .menu-courses li {
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--navy);
+  background: rgba(199, 163, 90, 0.18);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.menu-card .text-link {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* ---------------------------------------------------------------
+   Menus page
+   --------------------------------------------------------------- */
+
+.menu-toc {
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu-toc a {
+  display: inline-block;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid rgba(10, 31, 68, 0.14);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.menu-toc a:hover,
+.menu-toc a:focus-visible {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.menu-block {
+  /* Sticky header is ~5.4rem; keep anchored headings clear of it. */
+  scroll-margin-top: 6.5rem;
+  background: var(--surface);
+  border: 1px solid rgba(10, 31, 68, 0.09);
+  border-radius: 0.85rem;
+  box-shadow: 0 12px 24px rgba(10, 31, 68, 0.08);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  margin-top: 1.5rem;
+}
+
+.menu-block-head {
+  border-bottom: 1px solid rgba(10, 31, 68, 0.12);
+  padding-bottom: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.menu-block-head h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+}
+
+.menu-block-head .menu-blurb {
+  margin: 0.6rem 0 0;
+  max-width: 62ch;
+}
+
+.menu-selection-note {
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.9rem;
+  background: rgba(199, 163, 90, 0.14);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 0.4rem 0.4rem 0;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.course {
+  margin-top: 1.6rem;
+}
+
+.course:first-of-type {
+  margin-top: 0;
+}
+
+.course-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.course-head h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  color: var(--navy);
+}
+
+.course-note {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--gold-ink);
+}
+
+.dish-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+
+.dish-list li {
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(199, 163, 90, 0.45);
+}
+
+.dish-name {
+  display: block;
+  font-weight: 600;
+}
+
+.dish-desc {
+  display: block;
+  color: var(--slate);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-top: 0.1rem;
+}
+
+.menu-block-cta {
+  margin-top: 1.8rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid rgba(10, 31, 68, 0.12);
+}
+
+.menus-outro {
+  margin-top: 2.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 0.85rem;
+}
+
+.menus-outro h2 {
+  color: var(--white);
+}
+
+.menus-outro p {
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.menus-outro .button {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 600px) {
+  .dish-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.label-optional {
+  font-weight: 400;
+  color: var(--slate);
+  font-size: 0.86rem;
+}
+
+.menus-cta {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------
+   Tap-to-call in the sticky header
+   The number stays reachable at every breakpoint; on narrow screens
+   the digits collapse to the handset glyph so the brand still fits.
+   --------------------------------------------------------------- */
+
+.header-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(199, 163, 90, 0.55);
+  border-radius: 999px;
+}
+
+.header-call:hover,
+.header-call:focus-visible {
+  background: var(--gold);
+  color: var(--navy);
+  border-color: var(--gold);
+}
+
+.hero-tertiary {
+  color: var(--white);
+  align-self: center;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .header-call-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .header-call {
+    padding: 0.5rem 0.7rem;
+    font-size: 1.05rem;
+  }
+}
+
+.dietary-head {
+  margin-top: 2.4rem;
+  font-size: 1.35rem;
+}
+
+.dietary-copy {
+  max-width: 65ch;
+  margin: 0.7rem 0 0;
+}
+
+.form-next {
+  margin-top: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  background: rgba(199, 163, 90, 0.12);
+  border-radius: 0.6rem;
+}
+
+.form-next h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-next ol {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+}
+
+.thanks-next {
+  margin: 1.6rem 0;
+  max-width: 46rem;
+}
+
+.thanks-next h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.thanks-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* The secondary button is light-on-dark by default; on the cream
+   confirmation page it needs the navy treatment to stay legible. */
+.thanks-back {
+  color: var(--navy);
+  border-color: rgba(10, 31, 68, 0.45);
 }

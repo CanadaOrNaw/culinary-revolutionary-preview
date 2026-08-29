@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Culinary Revolutionary | Private Chef &amp; Catering in Florida</title>
+  <title>Private Chef in Naples &amp; Fort Myers | Culinary Revolutionary</title>
   <meta
     name="description"
-    content="Culinary Revolutionary provides private chef services, catering, meal preparation, cooking classes, and restaurant consultation in Florida."
+    content="Chef JB Martin cooks in your home across Naples, Fort Myers and Southwest Florida: private dinners, event catering and weekly meal prep. Call (239) 507-3175."
   />
   <meta name="theme-color" content="#0a1f44" />
+  <link rel="canonical" href="https://www.culinary-revolutionary.com/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Culinary Revolutionary" />
-  <meta property="og:title" content="Culinary Revolutionary | Private Chef &amp; Catering in Florida" />
+  <meta property="og:title" content="Private Chef in Naples &amp; Fort Myers | Culinary Revolutionary" />
   <meta
     property="og:description"
-    content="Private chef services, catering, meal preparation, cooking classes, and restaurant consultation in Florida."
+    content="Chef JB Martin cooks in your home across Naples, Fort Myers and Southwest Florida: private dinners, event catering and weekly meal prep."
   />
-  <meta property="og:image" content="public/assets/hero.jpg" />
+  <meta property="og:image" content="https://www.culinary-revolutionary.com/public/assets/hero.jpg" />
+  <meta property="og:image:alt" content="Chef JB Martin plating a private dinner course." />
+  <meta property="og:url" content="https://www.culinary-revolutionary.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="favicon.ico" sizes="any" />
@@ -36,10 +39,84 @@
     .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; }
     .social-links svg { display: block; width: 20px; height: 20px; fill: currentColor; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=20260720-2" />
+  <link rel="stylesheet" href="styles.css?v=20260829-1" />
+
+  <!--
+    Structured data. Tells Google this is a service-area business (a chef who
+    travels to you), not a restaurant. Deliberately omits ratings, reviews, and
+    awards: inventing them is a manual-action risk, and the James Beard /
+    Johnson & Wales claims are unverified — see README before adding them here.
+    CONFIRM WITH CLIENT: the areaServed city list and priceRange.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.culinary-revolutionary.com/#business",
+        "name": "Culinary Revolutionary",
+        "alternateName": "Culinary Revolutionary — Chef JB Martin",
+        "description": "Private chef, catering, meal preparation, in-home cooking classes and restaurant consultation serving Naples, Fort Myers and Southwest Florida.",
+        "url": "https://www.culinary-revolutionary.com/",
+        "telephone": "+1-239-507-3175",
+        "logo": "https://www.culinary-revolutionary.com/public/assets/logo-256.png",
+        "image": [
+          "https://www.culinary-revolutionary.com/public/assets/hero.jpg",
+          "https://www.culinary-revolutionary.com/public/assets/service-private-chef.jpg",
+          "https://www.culinary-revolutionary.com/public/assets/service-catering.jpg"
+        ],
+        "priceRange": "$$$",
+        "currenciesAccepted": "USD",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Naples",
+          "addressRegion": "FL",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Naples", "addressRegion": "FL" },
+          { "@type": "City", "name": "Fort Myers", "addressRegion": "FL" },
+          { "@type": "City", "name": "Bonita Springs", "addressRegion": "FL" },
+          { "@type": "City", "name": "Estero", "addressRegion": "FL" },
+          { "@type": "City", "name": "Marco Island", "addressRegion": "FL" },
+          { "@type": "City", "name": "Cape Coral", "addressRegion": "FL" }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/culinary_revolutionary_",
+          "https://www.facebook.com/people/Culinary-Revolutionary/61590884438081/"
+        ],
+        "founder": { "@id": "https://www.culinary-revolutionary.com/#chef" },
+        "employee": { "@id": "https://www.culinary-revolutionary.com/#chef" },
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Chef", "serviceType": "Private chef service", "description": "In-home custom menus, plating, service flow and clean handoff.", "provider": { "@id": "https://www.culinary-revolutionary.com/#business" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Catering", "serviceType": "Event catering", "description": "Corporate events, weddings, tastings and private celebrations.", "provider": { "@id": "https://www.culinary-revolutionary.com/#business" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Meal Preparation", "serviceType": "Weekly meal preparation", "description": "Weekly plans of balanced proteins and produce-forward sides.", "provider": { "@id": "https://www.culinary-revolutionary.com/#business" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Home Cooking Classes", "serviceType": "Cooking class", "description": "Small-group hands-on classes in technique and menu execution.", "provider": { "@id": "https://www.culinary-revolutionary.com/#business" } } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restaurant Consultation", "serviceType": "Restaurant consulting", "description": "Menu audits, training support and menu-costing guidance.", "provider": { "@id": "https://www.culinary-revolutionary.com/#business" } } }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.culinary-revolutionary.com/#chef",
+        "name": "JB Martin",
+        "jobTitle": "Private Chef",
+        "telephone": "+1-239-507-3175",
+        "worksFor": { "@id": "https://www.culinary-revolutionary.com/#business" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.culinary-revolutionary.com/#website",
+        "url": "https://www.culinary-revolutionary.com/",
+        "name": "Culinary Revolutionary",
+        "publisher": { "@id": "https://www.culinary-revolutionary.com/#business" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#home">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Icon sprite: referenced by <use> in the header and footer. -->
   <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -66,12 +143,17 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#service-area">Service Area</a></li>
           <li><a href="#sample-menus">Sample Menus</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#inquiry">Inquiry</a></li>
         </ul>
       </nav>
       <div class="header-actions">
+        <a class="header-call" href="tel:+12395073175">
+          <span aria-hidden="true">&#9742;</span>
+          <span class="header-call-text">(239) 507-3175</span>
+        </a>
         <ul class="social-links" aria-label="Culinary Revolutionary on social media">
           <li>
             <a
@@ -102,7 +184,6 @@
           type="button"
           aria-controls="primary-nav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           Menu
         </button>
@@ -110,26 +191,30 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section id="home" class="hero section">
       <div class="hero-overlay">
         <img
           src="public/assets/hero.jpg"
-          alt="Chef plating a perfectly arranged Florida-style plated dinner."
+          alt="Chef JB Martin plating a Florida-style private dinner course."
           class="hero-image"
+          width="1024"
+          height="606"
+          fetchpriority="high"
         />
       </div>
       <div class="container hero-content">
-        <p class="eyebrow">Private Chef &amp; Catering in Florida</p>
-        <h1>Private Chef &amp; Catering in Florida</h1>
+        <p class="eyebrow">Chef JB Martin</p>
+        <h1>Private Chef &amp; Catering in Naples, Fort Myers &amp; Southwest Florida</h1>
         <p class="hero-subline">
           Elegant, practical food experiences built for your home, event, and
           calendar. You choose the menu, dining pace, and style; I handle the
           execution.
         </p>
         <div class="hero-actions">
-          <a href="#sample-menus" class="button primary">Explore Sample Menus</a>
-          <a href="#inquiry" class="button secondary">Check Availability</a>
+          <a href="tel:+12395073175" class="button primary">Call or text (239) 507-3175</a>
+          <a href="#inquiry" class="button secondary">Request a date</a>
+          <a href="menus.html" class="text-link hero-tertiary">See sample menus →</a>
         </div>
       </div>
     </section>
@@ -192,62 +277,120 @@
       </div>
     </section>
 
-    <section id="sample-menus" class="section alt">
+    <section id="service-area" class="section alt">
       <div class="container">
-        <p class="eyebrow">Sample Menus</p>
-        <h2>Example menus (illustrative and customizable)</h2>
+        <p class="eyebrow">Service Area</p>
+        <h2>Where I cook</h2>
         <p class="section-intro">
-          These are working formats only. Pricing is tailored to guest count and
-          menu.
+          I travel to you across Southwest Florida — Naples, Fort Myers, Bonita Springs,
+          Estero, Marco Island, and Cape Coral, plus the communities in between. If your
+          address sits outside that range, ask anyway; longer trips are often workable
+          for full-day events.
         </p>
-        <div class="menus-grid">
-          <article class="menu-card">
-            <h3>Private Dinner</h3>
-            <p class="menu-note">Seasonal three-course example</p>
-            <ul>
-              <li>Starter: Charred grapefruit, candied pecan, and citrus foam</li>
-              <li>Main: Seared local fish, roasted heirloom beets, buttered greens</li>
-              <li>
-                Dessert: Vanilla bean custard, caramelized pears, and warm brioche
-              </li>
-            </ul>
-            <a class="text-link menu-request" href="#inquiry">Request a menu like this →</a>
-          </article>
-          <article class="menu-card">
-            <h3>Celebration Catering</h3>
-            <p class="menu-note">Passed bites, shared mains, dessert</p>
-            <ul>
-              <li>Passed bites: citrus-lime grilled shrimp skewer</li>
-              <li>Main station: short-rib sliders, grilled vegetables, risotto</li>
-              <li>Shared dessert bar with house-made mousse and candied nuts</li>
-            </ul>
-            <a class="text-link menu-request" href="#inquiry">Request a menu like this →</a>
-          </article>
-          <article class="menu-card">
-            <h3>Weekly Meal Preparation</h3>
-            <p class="menu-note">Rotating balanced meals</p>
-            <ul>
-              <li>Week 1: protein-forward Mediterranean plates</li>
-              <li>Week 2: citrus chicken and roasted summer vegetables</li>
-              <li>Week 3: bean-and-rice bowls with crisp greens</li>
-            </ul>
-            <a class="text-link menu-request" href="#inquiry">Request a menu like this →</a>
-          </article>
-          <article class="menu-card">
-            <h3>Cooking Experience</h3>
-            <p class="menu-note">Hands-on class example</p>
-            <ul>
-              <li>Knife prep and flavor-building starter</li>
-              <li>Pan-finish technique and sauce basics</li>
-              <li>Plating and timing practice at service speed</li>
-            </ul>
-            <a class="text-link menu-request" href="#inquiry">Request a menu like this →</a>
-          </article>
-        </div>
+
+        <h3 class="dietary-head">Dietary needs are planned in, not worked around</h3>
+        <p class="dietary-copy">
+          Gluten-free, vegetarian, vegan, dairy-free, nut-allergy, low-sodium, and
+          diabetic-friendly menus are routine work rather than special requests. Tell me
+          the constraint when you inquire and the menu gets built around it from the
+          start — not adapted at the last minute.
+        </p>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="sample-menus" class="section">
+      <div class="container">
+        <p class="eyebrow">Sample Menus</p>
+        <h2>Seven menus to start from — every one of them customizable</h2>
+        <p class="section-intro">
+          Pick a direction and we shape it around your guests. Courses, dishes, and
+          service style are all adjustable, and dietary needs are planned in from the
+          start. Pricing depends on the number of courses, the dishes you choose, and
+          your guest count.
+        </p>
+        <div class="menus-grid">
+          <article class="menu-card">
+            <h3>Italian Feast</h3>
+            <p class="menu-teaser">A multi-course Italian menu built from antipasti, primi, secondi, insalata and dolce selections.</p>
+            <ul class="menu-courses">
+              <li>Antipasti</li>
+              <li>Primi</li>
+              <li>Secondi</li>
+              <li>Insalata</li>
+            </ul>
+            <a class="text-link" href="menus.html#italian-feast">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Brunch</h3>
+            <p class="menu-teaser">A build-your-own brunch spread of breakfast dishes, meats, starters, mains, sides and desserts.</p>
+            <ul class="menu-courses">
+              <li>Breakfast items</li>
+              <li>Breakfast meats</li>
+              <li>Starters</li>
+              <li>Mains</li>
+            </ul>
+            <a class="text-link" href="menus.html#brunch">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Tour of Spain</h3>
+            <p class="menu-teaser">A four-course Spanish menu moving from tapas-style starters through soups and salads to regional mains and classic custards.</p>
+            <ul class="menu-courses">
+              <li>Starters</li>
+              <li>First course</li>
+              <li>Mains</li>
+              <li>Dessert</li>
+            </ul>
+            <a class="text-link" href="menus.html#tour-of-spain">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Key West Inspired</h3>
+            <p class="menu-teaser">A four-course menu of Caribbean- and Florida-influenced dishes built around seafood, tropical fruit and citrus.</p>
+            <ul class="menu-courses">
+              <li>Amuse</li>
+              <li>Starters</li>
+              <li>Mains</li>
+              <li>Dessert</li>
+            </ul>
+            <a class="text-link" href="menus.html#key-west-inspired">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Wild Game</h3>
+            <p class="menu-teaser">A four-course menu centered on game meats such as venison, bison, elk, boar, duck and rabbit.</p>
+            <ul class="menu-courses">
+              <li>Starters</li>
+              <li>First course</li>
+              <li>Mains</li>
+              <li>Dessert</li>
+            </ul>
+            <a class="text-link" href="menus.html#wild-game">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Spanish Tapas</h3>
+            <p class="menu-teaser">A selection of Spanish small plates offered as cold and hot options.</p>
+            <ul class="menu-courses">
+              <li>Cold options</li>
+              <li>Hot options</li>
+            </ul>
+            <a class="text-link" href="menus.html#spanish-tapas">See the full menu →</a>
+          </article>
+          <article class="menu-card">
+            <h3>Vegetarian</h3>
+            <p class="menu-teaser">A three-course vegetarian menu of seasonal vegetable starters, mains and desserts.</p>
+            <ul class="menu-courses">
+              <li>Starters</li>
+              <li>Mains</li>
+              <li>Desserts</li>
+            </ul>
+            <a class="text-link" href="menus.html#vegetarian">See the full menu →</a>
+          </article>
+        </div>
+        <p class="menus-cta">
+          <a class="button primary" href="menus.html">Browse all seven menus in full</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
       <div class="container about-grid">
         <div>
           <p class="eyebrow">About</p>
@@ -266,7 +409,7 @@
             <li>Clear planning: guest flow, setup, staffing, and clean finish</li>
           </ul>
         </div>
-        <div class="about-gallery" aria-label="Chef and culinary work gallery">
+        <div class="about-gallery" role="group" aria-label="Chef and culinary work gallery">
           <img src="public/assets/about-chef-1.jpg" alt="Chef presenting a finished culinary creation" loading="lazy" />
           <img src="public/assets/about-chef-2.jpg" alt="Chef working during a culinary event" loading="lazy" />
           <img src="public/assets/about-chef-3.jpg" alt="Chef with a prepared dish" loading="lazy" />
@@ -308,7 +451,7 @@
       </div>
     </section>
 
-    <section id="inquiry" class="section alt">
+    <section id="inquiry" class="section">
       <div class="container">
         <p class="eyebrow">Inquiry</p>
         <h2>Tell me your date, style, and guest range</h2>
@@ -319,12 +462,40 @@
           <form
             id="inquiry-form"
             class="inquiry-form"
-            action="mailto:chef.jbmartin67@gmail.com"
-            method="GET"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+            <!--
+              SET THIS ONE VALUE TO SWITCH THE FORM ON.
+              Get a free key at https://web3forms.com — enter the destination
+              inbox, and the key arrives by email. Paste it below. Until it is
+              set, the form falls back to opening an email draft, so the button
+              is never dead.
+              To change the destination inbox later, request a new key for the
+              new address and replace it here. Nothing else changes.
+            -->
+            <input type="hidden" name="access_key" value="PASTE_WEB3FORMS_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New website inquiry — Culinary Revolutionary" />
+            <input type="hidden" name="from_name" value="culinary-revolutionary.com" />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://www.culinary-revolutionary.com/thank-you.html"
+            />
+
+            <!-- Web3Forms' native honeypot. Bots tick it; people never see it. -->
+            <input
+              class="honeypot"
+              type="checkbox"
+              name="botcheck"
+              id="botcheck"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
 
             <label for="name">Full name</label>
-            <input id="name" name="Name" type="text" autocomplete="name" required />
+            <input id="name" name="name" type="text" autocomplete="name" required />
 
             <label for="email">Email</label>
             <input
@@ -336,10 +507,10 @@
             />
 
             <label for="phone">Phone</label>
-            <input id="phone" name="Phone" type="tel" autocomplete="tel" />
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
 
             <label for="event-type">Service type</label>
-            <select id="event-type" name="Service">
+            <select id="event-type" name="service">
               <option>Private Chef</option>
               <option>Catering</option>
               <option>Meal Preparation</option>
@@ -347,24 +518,65 @@
               <option>Restaurant Consultation</option>
             </select>
 
-            <label for="guests">Guest count (estimate)</label>
-            <input id="guests" name="Guests" type="number" min="1" />
+            <label for="event-city">Event city or ZIP</label>
+            <input
+              id="event-city"
+              name="location"
+              type="text"
+              autocomplete="address-level2"
+              required
+              placeholder="Naples, Bonita Springs, 34102…"
+            />
 
-            <label for="event-date">Preferred date</label>
-            <input id="event-date" name="Preferred date" type="date" />
+            <label for="menu-interest">Menu of interest <span class="label-optional">(optional)</span></label>
+            <select id="menu-interest" name="menu">
+              <option value="">No preference yet</option>
+              <option value="italian-feast">Italian Feast</option>
+              <option value="brunch">Brunch</option>
+              <option value="tour-of-spain">Tour of Spain</option>
+              <option value="key-west-inspired">Key West Inspired</option>
+              <option value="wild-game">Wild Game</option>
+              <option value="spanish-tapas">Spanish Tapas</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="custom">Something custom</option>
+            </select>
+
+            <label for="guests">Guest count (estimate)</label>
+            <input id="guests" name="guests" type="number" min="1" inputmode="numeric" />
+
+            <label for="event-date">Preferred date <span class="label-optional">(leave blank if flexible)</span></label>
+            <input id="event-date" name="date" type="date" />
 
             <label for="notes">Project notes</label>
             <textarea
               id="notes"
-              name="Notes"
+              name="notes"
               rows="4"
               placeholder="Style, dietary needs, timing, and any must-include favorites."
             ></textarea>
 
-            <button id="inquiry-submit" type="submit" class="button primary">Open email draft</button>
+            <button id="inquiry-submit" type="submit" class="button primary">Send inquiry</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+            <div class="form-next">
+              <h3>What happens next</h3>
+              <ol>
+                <li>
+                  <strong>Within one to two business days</strong> — I reply personally to
+                  confirm whether your date is open.
+                </li>
+                <li>
+                  <strong>A short call</strong> — we talk through guests, dietary needs,
+                  kitchen setup, and the style of service you want.
+                </li>
+                <li>
+                  <strong>A written menu and quote</strong> — built for your event, with
+                  pricing broken out before anything is committed.
+                </li>
+              </ol>
+            </div>
             <p class="form-privacy">
-              This opens a pre-filled message in your email app addressed directly to Chef JB Martin. Review it, then press Send. Please do not include payment information.
+              Your details go straight to Chef JB Martin — no mailing list, no third-party
+              marketing. Please do not include payment information.
             </p>
           </form>
 
@@ -439,6 +651,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260720-3"></script>
+  <script src="script.js?v=20260829-1"></script>
 </body>
 </html>
