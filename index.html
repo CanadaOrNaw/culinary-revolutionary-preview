@@ -477,10 +477,17 @@
             <input type="hidden" name="access_key" value="PASTE_WEB3FORMS_ACCESS_KEY_HERE" />
             <input type="hidden" name="subject" value="New website inquiry — Culinary Revolutionary" />
             <input type="hidden" name="from_name" value="culinary-revolutionary.com" />
+            <!--
+              Only used when JavaScript is unavailable (the JS path redirects
+              itself). Web3Forms' free plan requires this to be on the SAME
+              origin the form was served from, so it tracks wherever the site
+              currently lives. CHANGE THIS at the custom-domain cutover to
+              https://www.culinary-revolutionary.com/thank-you.html
+            -->
             <input
               type="hidden"
               name="redirect"
-              value="https://www.culinary-revolutionary.com/thank-you.html"
+              value="https://canadaornaw.github.io/culinary-revolutionary-preview/thank-you.html"
             />
 
             <!-- Web3Forms' native honeypot. Bots tick it; people never see it. -->

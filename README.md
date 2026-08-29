@@ -45,7 +45,17 @@ How it behaves once the key is set:
 **To change the destination inbox** (e.g. from the Gmail to a business address): request a
 new key at <https://web3forms.com> against the new address and replace that one value.
 Nothing else changes — no DNS, no SPF/DKIM, because Web3Forms sends *to* the address, not
-*as* the domain.
+*as* the domain. Note that the new address must already be able to *receive* mail (i.e. the
+domain needs working MX records) before a key can be issued against it.
+
+### At the custom-domain cutover
+
+The hidden `redirect` input currently points at the `github.io` origin, because Web3Forms'
+free plan requires the redirect to be on the same origin that served the form. When the
+custom domain goes live, change it to
+`https://www.culinary-revolutionary.com/thank-you.html`. This only affects visitors with
+JavaScript disabled — the normal path redirects itself — but it will silently stop working
+if it is missed.
 
 ## Regenerating the menus
 
