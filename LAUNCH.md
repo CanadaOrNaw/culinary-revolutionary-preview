@@ -10,15 +10,13 @@ Everything here was verified live on 2026-09-02 unless marked otherwise.
 | | |
 |---|---|
 | Repo | `CanadaOrNaw/culinary-revolutionary-preview` |
-| Working branch | `launch/menus-and-inquiry` (PR #1, not merged) |
-| Preview | https://canadaornaw.github.io/culinary-revolutionary-preview/ — **currently serving the branch**, not `main` |
+| Deployment branch | `main` (PR #1 merged 2026-09-02) |
+| GitHub Pages site | https://canadaornaw.github.io/culinary-revolutionary-preview/ — serving `main` |
 | Live client site | https://www.culinary-revolutionary.com — still the old Wix site |
 | Registrar | Wix.com Ltd (IANA 3817) |
 | Nameservers | `ns4.wixdns.net`, `ns5.wixdns.net` |
 
-To let the branch deploy, `launch/menus-and-inquiry` was added to the
-`github-pages` environment's allowed deployment branches. **Remove it after the
-merge** so only `main` can publish.
+The `github-pages` environment is restricted to deployments from `main`.
 
 ---
 
@@ -37,6 +35,8 @@ merge** so only `main` can publish.
   `path: .` published `README.md`, `DESIGN.md` and `ASSET-SOURCES.json` — which
   document how the client's own imagery was captured — to the live domain.
   Artifact went 2.5 MB → 688 KB.
+- PR #1 is merged and the resulting `main` deployment completed successfully on
+  2026-09-02.
 - Geo claims grounded: the invented Naples/Fort Myers/Bonita/Estero/Marco
   Island/Cape Coral list is gone, replaced with "South Florida's Gulf Coast",
   which the chef's public Airbnb listing supports.
@@ -96,7 +96,7 @@ The order is load-bearing.
 1. Lower TTLs to 300, wait an hour *(optional; turns an hour-long rollback into
    five minutes)*
 2. Paste the Web3Forms key
-3. Merge PR #1, confirm the Actions run is green
+3. Confirm the latest `main` Pages workflow is green
 4. Settings → Pages → custom domain `www.culinary-revolutionary.com`.
    **A red DNS error here is expected — leave it.**
 5. Repoint the `www` CNAME, delete the three Wix A records, add GitHub's four
