@@ -68,8 +68,16 @@
   const isConfigured = Boolean(accessKey) && accessKey !== KEY_PLACEHOLDER;
 
   const formStatus = document.getElementById("form-status");
+  const formModeNote = document.getElementById("form-mode-note");
   const submitButton = document.getElementById("inquiry-submit");
   const menuField = document.getElementById("menu-interest");
+
+  // Be explicit while the key is pending: this path opens a draft and still
+  // requires the visitor to tap Send in their email app.
+  if (!isConfigured) {
+    if (submitButton) submitButton.textContent = "Open email to send";
+    if (formModeNote) formModeNote.hidden = false;
+  }
 
   const clean = (value) => String(value == null ? "" : value).trim();
 

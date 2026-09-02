@@ -31,7 +31,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap"
     rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
   />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </noscript>
   <style>
     /* Critical icon layout stays inline so stale browser CSS can never expose the SVG sprite. */
     .icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
@@ -39,7 +47,7 @@
     .social-links a { display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; }
     .social-links svg { display: block; width: 20px; height: 20px; fill: currentColor; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=20260829-1" />
+  <link rel="stylesheet" href="styles.css?v=20260902-1" />
 
   <!--
     Structured data. Tells Google this is a service-area business (a chef who
@@ -409,9 +417,9 @@
           <img src="public/assets/about-chef-3.jpg" alt="Chef with a prepared dish" loading="lazy" />
         </div>
 
-        <aside class="proof-box">
+        <aside class="proof-box" aria-labelledby="career-highlights-heading">
           <p class="eyebrow">Career Highlights</p>
-          <h3>A career worth showing</h3>
+          <h3 id="career-highlights-heading">A career worth showing</h3>
 
           <ul class="stat-list">
             <li>
@@ -556,13 +564,17 @@
             ></textarea>
 
             <button id="inquiry-submit" type="submit" class="button primary">Send inquiry</button>
+            <p id="form-mode-note" class="form-mode-note" hidden>
+              This currently opens a pre-filled email. Review the message, then tap Send
+              in your email app.
+            </p>
             <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
             <div class="form-next">
               <h3>What happens next</h3>
               <ol>
                 <li>
-                  <strong>Within one to two business days</strong> — I reply personally to
-                  confirm whether your date is open.
+                  <strong>A personal reply</strong> — I confirm whether your date is open
+                  and arrange a short planning call.
                 </li>
                 <li>
                   <strong>A short call</strong> — we talk through guests, dietary needs,
@@ -575,13 +587,14 @@
               </ol>
             </div>
             <p class="form-privacy">
-              Your details go straight to Chef JB Martin — no mailing list, no third-party
-              marketing. Please do not include payment information.
+              Your details are used only to respond to this inquiry — no mailing list or
+              third-party marketing. Online submissions are processed by Web3Forms for
+              delivery to Chef JB Martin. Please do not include payment information.
             </p>
           </form>
 
-          <aside class="contact-card" aria-label="Direct contact">
-            <h3>Direct contact</h3>
+          <aside class="contact-card" aria-labelledby="direct-contact-heading">
+            <h3 id="direct-contact-heading">Direct contact</h3>
             <p>Florida, USA</p>
             <a href="tel:+12395073175">(239) 507-3175</a>
             <a href="mailto:chef.jbmartin67@gmail.com">chef.jbmartin67@gmail.com</a>
@@ -651,6 +664,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260829-1"></script>
+  <script src="script.js?v=20260902-1"></script>
 </body>
 </html>

@@ -29,7 +29,8 @@ a distance beyond which there's a travel fee?
 **Where inquiries should go.** Right now: `chef.jbmartin67@gmail.com`. Keep it, or switch
 to a new business address on the domain?
 
-**Response time.** The site promises a reply "within one to two business days." Accurate?
+**Response time.** Is there a response-time commitment we can state? The launch build
+does not promise one until it is confirmed.
 
 ## 3. Should answer — these directly cost bookings
 

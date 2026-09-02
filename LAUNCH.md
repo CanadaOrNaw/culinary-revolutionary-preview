@@ -1,7 +1,7 @@
 # Launch state — culinary-revolutionary.com
 
 Working notes for the Wix → GitHub Pages cutover and the business-email setup.
-Everything here was verified live on 2026-08-29 unless marked otherwise.
+Everything here was verified live on 2026-09-02 unless marked otherwise.
 
 ---
 
@@ -45,10 +45,11 @@ merge** so only `main` can publish.
 
 - **Web3Forms access key.** `index.html` still has
   `value="PASTE_WEB3FORMS_ACCESS_KEY_HERE"`. Until it is set, the form falls
-  back to a mailto draft.
+  back to an explicitly labelled mailto draft.
 - **Business mailbox.** Not created. See §6 for what was ruled out.
-- **Domain transfer.** Not started. EPP code is in the client's menus docx.
-- **Unverified credentials still on the page** — see §7.
+- **Domain transfer.** The registrar and authoritative nameservers are still Wix;
+  no completed transfer is visible publicly.
+- **Custom-domain cutover.** DNS still serves the old Wix site.
 
 ---
 
@@ -159,22 +160,17 @@ would move the client backwards on lead capture.
 
 ---
 
-## 7. Open — needs the chef
+## 7. Client confirmation that would strengthen the site
 
-**Unverified credentials, still live on the page.** `index.html:396-398`
-(About), `:427` (stat tile), `:433` (Selected kitchens), `:441` (footnote):
+The biography claims are **not a launch blocker**. They appear on the client's live
+Wix `/about-me` page and were re-verified there on 2026-09-02: Johnson & Wales,
+The French Laundry, Bensi, Mexican Radio, Amore Italiano, Big Sky, 30+ years,
+30+ competitions, and two James Beard nominations. The redesign is carrying
+forward client-published claims rather than inventing them.
 
-- Two James Beard nominations — need category and year
-- The French Laundry, Bensi, Mexican Radio, Amore Italiano, Big Sky
-- Johnson & Wales
-- 30+ years, 30+ competitions
-
-**None of these appear on the chef's own Wix site** — checked with a 1.6 MB
-fetch, where "Culinary Revolutionary", the phone number and "Florida" all match,
-so the absence is real. The previous build introduced them, while its
-`DESIGN.md` claims *"Claims are limited to statements already present on the
-source site."* That is not true of these. James Beard nominations are a public
-searchable database, so the claim is trivially checkable by anyone.
+They have not been independently credential-checked. Category and year for the
+James Beard nominations, dates/roles for the named kitchens, and the Johnson &
+Wales program would make the copy more credible when the chef supplies them.
 
 **Also outstanding:** destination inbox, a pricing floor, food-safety
 certification, liability insurance, and the 17 menu ambiguities in

@@ -22,7 +22,9 @@ python3 -m http.server 8096 --bind 127.0.0.1
 ## Inquiry form
 
 The form POSTs to **Web3Forms**, which relays the submission to the destination inbox.
-There is no server and no data is stored by the site.
+There is no application server or site database. Web3Forms currently says free-plan
+submissions may be retained for 30 days, so the form discloses the provider rather than
+implying a direct browser-to-inbox connection.
 
 **The access key is the only thing to configure**, and it lives in exactly one place —
 the hidden input at the top of the form in `index.html`:
