@@ -1,0 +1,1234 @@
+{
+ "menus": [
+  {
+   "id": "italian-feast",
+   "title": "Italian Feast",
+   "blurb": "A multi-course Italian menu built from antipasti, primi, secondi, insalata and dolce selections.",
+   "selectionNote": "Please select 1 option per desired course. Price will depend on total # of courses and items selected.",
+   "courses": [
+    {
+     "name": "Antipasti",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Roasted artichoke hearts with stuffed fried olives and a preserved lemon aioli",
+       "description": ""
+      },
+      {
+       "name": "Prosciutto wrapped pears with Gorgonzola and walnuts",
+       "description": ""
+      },
+      {
+       "name": "Polenta crostini topped with wild mushroom ragu",
+       "description": ""
+      },
+      {
+       "name": "Burrata with heirloom tomatoes and basil oil",
+       "description": ""
+      },
+      {
+       "name": "Arancini with saffron aioli",
+       "description": ""
+      },
+      {
+       "name": "Garlic & herb grilled shrimp skewers",
+       "description": ""
+      },
+      {
+       "name": "Shrimp polenta bites with tomato basil ragu",
+       "description": ""
+      },
+      {
+       "name": "Burrata and roasted grape crostini",
+       "description": ""
+      },
+      {
+       "name": "Prosciutto wrapped figs with balsamic reduction",
+       "description": ""
+      },
+      {
+       "name": "Ricotta and apricot bruschetta with honey and pistachios",
+       "description": ""
+      },
+      {
+       "name": "Traditional bruschetta",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Primi",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Black truffle and wild mushroom risotto",
+       "description": ""
+      },
+      {
+       "name": "Cacio e Pepe",
+       "description": ""
+      },
+      {
+       "name": "Gnocchi with pancetta in a pecorino cream sauce",
+       "description": ""
+      },
+      {
+       "name": "Pea and mint risotto",
+       "description": ""
+      },
+      {
+       "name": "Spaghetti carbonara",
+       "description": ""
+      },
+      {
+       "name": "Linguine alla vongole",
+       "description": ""
+      },
+      {
+       "name": "Tagliatelle al Funghi",
+       "description": ""
+      },
+      {
+       "name": "Bucatini with white beans, tomatoes and broccoli rabe or spinach",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Secondi",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Pistachio crusted rack of lamb",
+       "description": ""
+      },
+      {
+       "name": "Gnudi with sage brown butter",
+       "description": ""
+      },
+      {
+       "name": "Veal Osso Buco",
+       "description": ""
+      },
+      {
+       "name": "Pan seared black cod with charred tomatoes, olives, white beans and escarole",
+       "description": ""
+      },
+      {
+       "name": "Smoked and grilled octopus served over a creamy mascarpone polenta",
+       "description": ""
+      },
+      {
+       "name": "Chicken cacciatore",
+       "description": ""
+      },
+      {
+       "name": "Lemon herb roasted chicken with rosemary potatoes",
+       "description": ""
+      },
+      {
+       "name": "Creamy Tuscan chicken served over tagliatelle",
+       "description": ""
+      },
+      {
+       "name": "Beef brasato al Barolo",
+       "description": ""
+      },
+      {
+       "name": "Sliced steak with arugula and parmesan",
+       "description": ""
+      },
+      {
+       "name": "Black bass alla Siciliana",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Insalata",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Fennel and Orange",
+       "description": ""
+      },
+      {
+       "name": "Panzanella",
+       "description": ""
+      },
+      {
+       "name": "Antipasto salad with Bocconcini and olive tapenade",
+       "description": ""
+      },
+      {
+       "name": "Caesar salad with homemade dressing and croutons",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Dolce",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Lemon panna cotta with roasted figs and port wine reduction",
+       "description": ""
+      },
+      {
+       "name": "Torta Caprese",
+       "description": ""
+      },
+      {
+       "name": "Zabaglione",
+       "description": ""
+      },
+      {
+       "name": "Date and pistachio tiramisu",
+       "description": ""
+      },
+      {
+       "name": "Honey roasted pears with vanilla mint whipped cream",
+       "description": ""
+      },
+      {
+       "name": "Traditional tiramisu",
+       "description": ""
+      },
+      {
+       "name": "Strawberry basil tiramisu",
+       "description": ""
+      },
+      {
+       "name": "Dark chocolate olive oil cake, mint whipped cream, roasted strawberries",
+       "description": ""
+      },
+      {
+       "name": "Citrus & almond flour semolina cake with orange syrup and fresh whipped cream.",
+       "description": ""
+      },
+      {
+       "name": "Vanilla bean panna cotta with fresh berries",
+       "description": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brunch",
+   "title": "Brunch",
+   "blurb": "A build-your-own brunch spread of breakfast dishes, meats, starters, mains, sides and desserts.",
+   "selectionNote": "Menu price per person will depend on total items selected. Choose as many items as you like from any section.",
+   "courses": [
+    {
+     "name": "Breakfast items",
+     "note": "",
+     "items": [
+      {
+       "name": "French toast",
+       "description": ""
+      },
+      {
+       "name": "Buttermilk pancakes",
+       "description": ""
+      },
+      {
+       "name": "Blueberry pancakes",
+       "description": ""
+      },
+      {
+       "name": "Banana pancakes",
+       "description": ""
+      },
+      {
+       "name": "Chocolate chip pancakes",
+       "description": ""
+      },
+      {
+       "name": "French toast casserole",
+       "description": ""
+      },
+      {
+       "name": "Eggs",
+       "description": ""
+      },
+      {
+       "name": "Biscuits and sausage gravy",
+       "description": ""
+      },
+      {
+       "name": "Corned beef hash",
+       "description": ""
+      },
+      {
+       "name": "Kahlua and espresso French toast",
+       "description": ""
+      },
+      {
+       "name": "Avocado toast",
+       "description": ""
+      },
+      {
+       "name": "Quiche",
+       "description": ""
+      },
+      {
+       "name": "Eggs Benedict",
+       "description": ""
+      },
+      {
+       "name": "Crab Eggs Benedict",
+       "description": ""
+      },
+      {
+       "name": "Mexican eggs Benedict",
+       "description": ""
+      },
+      {
+       "name": "Stuffed French toast",
+       "description": ""
+      },
+      {
+       "name": "Chia bowl",
+       "description": ""
+      },
+      {
+       "name": "Breakfast flatbread",
+       "description": ""
+      },
+      {
+       "name": "Breakfast sandwich",
+       "description": ""
+      },
+      {
+       "name": "Breakfast burger",
+       "description": ""
+      },
+      {
+       "name": "Bagels",
+       "description": ""
+      },
+      {
+       "name": "Lox",
+       "description": ""
+      },
+      {
+       "name": "Cream cheese",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Breakfast meats",
+     "note": "",
+     "items": [
+      {
+       "name": "Bacon",
+       "description": ""
+      },
+      {
+       "name": "Ham",
+       "description": ""
+      },
+      {
+       "name": "Sausage links",
+       "description": ""
+      },
+      {
+       "name": "Scrapple",
+       "description": ""
+      },
+      {
+       "name": "Pork roll",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Starters",
+     "note": "",
+     "items": [
+      {
+       "name": "Citrus avocado salad",
+       "description": ""
+      },
+      {
+       "name": "Whipped feta with honey, balsamic & pistachios",
+       "description": ""
+      },
+      {
+       "name": "Pimento cheese tarts",
+       "description": ""
+      },
+      {
+       "name": "Greek salad",
+       "description": ""
+      },
+      {
+       "name": "Citrus & fennel salad",
+       "description": ""
+      },
+      {
+       "name": "Fried green tomatoes with remoulade",
+       "description": ""
+      },
+      {
+       "name": "Burrata and heirloom tomato",
+       "description": ""
+      },
+      {
+       "name": "Fig & goat cheese tarts",
+       "description": ""
+      },
+      {
+       "name": "Panzanella salad",
+       "description": ""
+      },
+      {
+       "name": "Caesar salad",
+       "description": ""
+      },
+      {
+       "name": "Deviled eggs with salmon roe",
+       "description": ""
+      },
+      {
+       "name": "Chilled melon & prosciutto with basil oil",
+       "description": ""
+      },
+      {
+       "name": "Charcuterie skewers",
+       "description": ""
+      },
+      {
+       "name": "Crab & avocado salad",
+       "description": ""
+      },
+      {
+       "name": "Corn fritters with jalapeño aioli",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Mains",
+     "note": "",
+     "items": [
+      {
+       "name": "Shrimp & grits",
+       "description": ""
+      },
+      {
+       "name": "Duck hash with caramelized onions",
+       "description": ""
+      },
+      {
+       "name": "Prosciutto and fontina frittata",
+       "description": ""
+      },
+      {
+       "name": "Short rib, parm polenta with poached egg",
+       "description": ""
+      },
+      {
+       "name": "Roast beef",
+       "description": ""
+      },
+      {
+       "name": "Roast Turkey",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Sides",
+     "note": "",
+     "items": [
+      {
+       "name": "Roasted fingerling potatoes",
+       "description": ""
+      },
+      {
+       "name": "Mashed potatoes",
+       "description": ""
+      },
+      {
+       "name": "Potato salad",
+       "description": ""
+      },
+      {
+       "name": "Jalapeño popper potato salad",
+       "description": ""
+      },
+      {
+       "name": "Cheddar grits",
+       "description": ""
+      },
+      {
+       "name": "Breakfast potatoes",
+       "description": ""
+      },
+      {
+       "name": "Rice pilaf",
+       "description": ""
+      },
+      {
+       "name": "Wild rice",
+       "description": ""
+      },
+      {
+       "name": "Seasonal fruit",
+       "description": ""
+      },
+      {
+       "name": "Brussels sprouts with bacon",
+       "description": ""
+      },
+      {
+       "name": "Roasted asparagus",
+       "description": ""
+      },
+      {
+       "name": "Italian pasta salad",
+       "description": ""
+      },
+      {
+       "name": "Glazed carrots",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Desserts",
+     "note": "",
+     "items": [
+      {
+       "name": "Lemon ricotta cake with blueberry compote",
+       "description": ""
+      },
+      {
+       "name": "Vanilla bean panna cotta",
+       "description": ""
+      },
+      {
+       "name": "Chocolate olive oil cake",
+       "description": ""
+      },
+      {
+       "name": "Coconut chia pudding",
+       "description": ""
+      },
+      {
+       "name": "Cinnamon raisin bread pudding",
+       "description": ""
+      },
+      {
+       "name": "Coffee cake",
+       "description": ""
+      },
+      {
+       "name": "Chocolate mousse",
+       "description": ""
+      },
+      {
+       "name": "Mini key lime tarts",
+       "description": ""
+      },
+      {
+       "name": "Apple pie",
+       "description": ""
+      },
+      {
+       "name": "Peach pie",
+       "description": ""
+      },
+      {
+       "name": "Cherry pie",
+       "description": ""
+      },
+      {
+       "name": "Peach cobbler",
+       "description": ""
+      },
+      {
+       "name": "Blackberry cobbler",
+       "description": ""
+      },
+      {
+       "name": "Tres leches cake",
+       "description": ""
+      },
+      {
+       "name": "Assorted muffins",
+       "description": ""
+      },
+      {
+       "name": "Assorted danish & sweet breads",
+       "description": ""
+      },
+      {
+       "name": "Mini cream puffs",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Extra",
+     "note": "",
+     "items": [
+      {
+       "name": "Chilled shellfish raw bar",
+       "description": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tour-of-spain",
+   "title": "Tour of Spain",
+   "blurb": "A four-course Spanish menu moving from tapas-style starters through soups and salads to regional mains and classic custards.",
+   "selectionNote": "Price depends on the number of courses you choose and your guest count.",
+   "courses": [
+    {
+     "name": "Starters",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Patatas Bravas",
+       "description": "Crispy fried potatoes topped with a spicy tomato sauce and often garlic aioli"
+      },
+      {
+       "name": "Croquetas",
+       "description": "Creamy, breaded croquettes filled with choice of ham, chicken, cod, or mushrooms."
+      },
+      {
+       "name": "Pan con Tomate",
+       "description": "Toasted bread rubbed with ripe tomato, garlic, olive oil, and salt."
+      },
+      {
+       "name": "Gambas al Ajillo",
+       "description": "Shrimp cooked in olive oil with garlic and chili flakes."
+      },
+      {
+       "name": "Pimientos de Padrón",
+       "description": "Small green peppers blistered in olive oil and sprinkled with flaky salt."
+      },
+      {
+       "name": "Albóndigas",
+       "description": "Meatballs served in a rich tomato or almond-based sauce."
+      },
+      {
+       "name": "Boquerones en Vinagre",
+       "description": "Fresh anchovies marinated in vinegar, garlic, parsley, and olive oil."
+      },
+      {
+       "name": "Pulpo a la Gallega",
+       "description": "Tender octopus with olive oil, paprika, and coarse salt over sliced potatoes."
+      },
+      {
+       "name": "Jamón Ibérico",
+       "description": "Thin slices of premium dry-cured Iberian ham served with bread."
+      },
+      {
+       "name": "Aceitunas Aliñadas",
+       "description": "Mixed olives seasoned with herbs, garlic, citrus, and olive oil."
+      },
+      {
+       "name": "Champiñones al Ajillo",
+       "description": "Mushrooms sautéed with garlic, olive oil, parsley and white wine"
+      }
+     ]
+    },
+    {
+     "name": "First course",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Gazpacho",
+       "description": "Chilled tomato and vegetable soup"
+      },
+      {
+       "name": "Salmorejo",
+       "description": "A thicker, creamier tomato soup, topped with hard-boiled egg and cured ham."
+      },
+      {
+       "name": "Sopa de Ajo",
+       "description": "Rustic soup made with garlic, bread, paprika, and poached egg."
+      },
+      {
+       "name": "Ensalada Mixta",
+       "description": "Lettuce, tomatoes, onions, tuna, olives, and hard-boiled eggs."
+      },
+      {
+       "name": "Espárragos con Vinagreta",
+       "description": "Asparagus served with a tangy vinaigrette and chopped vegetables."
+      },
+      {
+       "name": "Judías Verdes con Jamón",
+       "description": "Green beans sautéed with garlic and cured ham."
+      },
+      {
+       "name": "Menestra de Verduras",
+       "description": "A medley of seasonal vegetables, lightly stewed."
+      },
+      {
+       "name": "Arroz Caldoso",
+       "description": "A comforting rice dish with chicken in a flavorful broth."
+      },
+      {
+       "name": "Pimientos Rellenos",
+       "description": "Roasted peppers filled with ground pork and beef"
+      },
+      {
+       "name": "Crema de Calabaza",
+       "description": "Smooth pumpkin soup flavored with olive oil and spices."
+      }
+     ]
+    },
+    {
+     "name": "Mains",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Paella Valenciana",
+       "description": "The iconic rice dish made with chicken, rabbit, green beans, and saffron. (4-8 guests only)"
+      },
+      {
+       "name": "Pollo al Ajillo",
+       "description": "Chicken browned and simmered with garlic, olive oil, white wine, and herbs."
+      },
+      {
+       "name": "Bacalao al Pil-Pil",
+       "description": "Salt cod cooked in olive oil with garlic until the sauce becomes silky and emulsified."
+      },
+      {
+       "name": "Cordero Asado",
+       "description": "Slow-roasted lamb seasoned simply with garlic, rosemary, and olive oil."
+      },
+      {
+       "name": "Fabada Asturiana",
+       "description": "A hearty white bean stew with chorizo and pork."
+      },
+      {
+       "name": "Merluza a la Vasca",
+       "description": "Hake cooked in a light sauce with garlic, white wine, peas, and asparagus."
+      },
+      {
+       "name": "Rabo de Toro",
+       "description": "Slow-braised oxtail in a rich red wine and vegetable sauce."
+      },
+      {
+       "name": "Fideuà",
+       "description": "A seafood dish similar to paella but made with short noodles instead of rice"
+      },
+      {
+       "name": "Chuletas de Cordero",
+       "description": "Grilled lamb chops seasoned with garlic, herbs, and olive oil."
+      },
+      {
+       "name": "Pollo en Pepitoria",
+       "description": "Chicken braised in a traditional sauce made with saffron, almonds, garlic, egg yolks, and white wine. It's a historic Castilian dish known for its rich, nutty flavor."
+      },
+      {
+       "name": "Lubina a la Sal",
+       "description": "Whole sea bass baked in a thick crust of sea salt, then cracked open and served with olive oil, lemon, or simple herb sauces. The salt crust keeps the fish exceptionally moist and flavorful."
+      }
+     ]
+    },
+    {
+     "name": "Dessert",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Flan",
+       "description": "A silky baked vanilla custard topped with caramel sauce."
+      },
+      {
+       "name": "Arroz con Leche",
+       "description": "Creamy rice pudding flavored with cinnamon, lemon peel, and vanilla."
+      },
+      {
+       "name": "Crema Catalana",
+       "description": "A smooth citrus- and cinnamon-infused custard with a crisp caramelized sugar topping."
+      },
+      {
+       "name": "Tarta de Santiago",
+       "description": "A naturally gluten-free almond cake flavored with lemon zest and dusted with powdered sugar."
+      },
+      {
+       "name": "Natillas",
+       "description": "A simple stovetop vanilla custard, garnished with cinnamon and a crisp cookie."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "key-west-inspired",
+   "title": "Key West Inspired",
+   "blurb": "A four-course menu of Caribbean- and Florida-influenced dishes built around seafood, tropical fruit and citrus.",
+   "selectionNote": "Price depends on the number of courses you choose and your guest count.",
+   "courses": [
+    {
+     "name": "Amuse",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Mini-Caribbean toast bite with refried beans, jerk chicken, roasted pineapple, avocado and lime crema",
+       "description": ""
+      },
+      {
+       "name": "Tomato-mango gazpacho shooter",
+       "description": ""
+      },
+      {
+       "name": "Cassava & cheese croquette with mango sauce",
+       "description": ""
+      },
+      {
+       "name": "Caribbean spiced pork polenta bite",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Starters",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Florida stone crab salad",
+       "description": "Lump stone crabmeat, avocado, hearts of palm, citrus supreme, key lime vinaigrette & herb oil."
+      },
+      {
+       "name": "Yellowtail snapper crudo with key lime leche de tigre, watermelon, pink peppercorn, cilantro and mango oil.",
+       "description": ""
+      },
+      {
+       "name": "Seared diver scallops with coconut/passion fruit beurre blanc, crispy prosciutto shard and charred pineapple.",
+       "description": ""
+      },
+      {
+       "name": "Blackened alligator tostada with guacamole, pineapple/mango salsa, citrus slaw, crema and queso fresco",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Mains",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Grilled lobster tail with mango rum butter, coconut rice and charred pineapple salsa.",
+       "description": ""
+      },
+      {
+       "name": "Pan seared grouper with saffron rice, coconut broth, roasted vegetables and charred scallion oil",
+       "description": ""
+      },
+      {
+       "name": "Coffee and cocoa crusted pork tenderloin, roasted sweet potato & plantain puree and grilled asparagus",
+       "description": ""
+      },
+      {
+       "name": "Guava glazed pork belly with coconut-cauliflower puree, charred fruit and crispy plantain chips",
+       "description": ""
+      },
+      {
+       "name": "Blackened red snapper with forbidden rice and charred broccolini. Served with a passion fruit rum sauce.",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Dessert",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Key lime pie with toasted meringue",
+       "description": ""
+      },
+      {
+       "name": "Pineapple carpaccio with aged rum caramel, toasted coconut, lime granita and mint",
+       "description": ""
+      },
+      {
+       "name": "Chocolate olive oil cake with banana cremeux, chocolate mousse and cacao nib crunch",
+       "description": ""
+      },
+      {
+       "name": "Vanilla bean panna cotta with brandy macerated berries.",
+       "description": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wild-game",
+   "title": "Wild Game",
+   "blurb": "A four-course menu centered on game meats such as venison, bison, elk, boar, duck and rabbit.",
+   "selectionNote": "Price depends on the number of courses you choose and your guest count.",
+   "courses": [
+    {
+     "name": "Starters",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Venison Carpaccio",
+       "description": "Juniper vinaigrette, shaved parmesan, pickled blackberry, crispy capers, wild arugula"
+      },
+      {
+       "name": "Bison Tartare",
+       "description": "Quail egg yolk, black garlic aioli, pickled mustard seed, rye crisps"
+      },
+      {
+       "name": "Duck Breast Pastrami",
+       "description": "Rye crostini, grain mustard crema, pickled fennel, dill oil"
+      },
+      {
+       "name": "Smoked Rabbit Rillette",
+       "description": "Cherry preserves, toasted brioche, herb salad"
+      }
+     ]
+    },
+    {
+     "name": "First course",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Wild Mushroom & Quail Bisque",
+       "description": "Sherry cream, crispy leeks, thyme oil"
+      },
+      {
+       "name": "Roasted Corn Chowder",
+       "description": "Duck Confit, charred corn relish, smoked paprika, chive oil"
+      },
+      {
+       "name": "Butternut Squash Bisque",
+       "description": "Brown butter, sage crema, toasted pumpkin seeds"
+      }
+     ]
+    },
+    {
+     "name": "Mains",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Coffee & Cocoa Rubbed Elk Loin",
+       "description": "Celery root purée, charred broccolini, huckleberry demi-glace, crispy shallots"
+      },
+      {
+       "name": "Roasted Wild Boar Tenderloin",
+       "description": "Sweet potato pavé, apple mostarda, sage brown butter, roasted cipollini onions"
+      },
+      {
+       "name": "Bourbon Glazed Venison Short Rib",
+       "description": "White cheddar grits, roasted carrots, red wine jus"
+      },
+      {
+       "name": "Maple Glazed Duck Breast",
+       "description": "Sweet potato fondant, wilted kale, cherry gastrique"
+      },
+      {
+       "name": "Grilled Elk Tenderloin",
+       "description": "Wild mushroom risotto, asparagus, red wine demi-glace"
+      }
+     ]
+    },
+    {
+     "name": "Dessert",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Maple Bourbon Bread Pudding",
+       "description": "Candied pecans, vanilla bean anglaise, bourbon caramel"
+      },
+      {
+       "name": "Blackberry Cobbler",
+       "description": "Vanilla mascarpone cream, oat streusel, lemon thyme syrup"
+      },
+      {
+       "name": "Vanilla Bean Crème Brûlée",
+       "description": "Roasted figs, honeycomb candy, toasted pistachios"
+      },
+      {
+       "name": "Dark Chocolate Bread Pudding",
+       "description": "Espresso anglaise, smoked sea salt, cocoa nib"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spanish-tapas",
+   "title": "Spanish Tapas",
+   "blurb": "A selection of Spanish small plates offered as cold and hot options.",
+   "selectionNote": "Price will depend on number of total selections. Choose as many items as you like from any section.",
+   "courses": [
+    {
+     "name": "Cold options",
+     "note": "",
+     "items": [
+      {
+       "name": "Marinated olives with citrus and herbs",
+       "description": ""
+      },
+      {
+       "name": "Pan con tomate (toasted bread with roasted tomatoes, garlic and EVOO)",
+       "description": ""
+      },
+      {
+       "name": "Ibérico ham with manchego cheese",
+       "description": ""
+      },
+      {
+       "name": "Gazpacho shooters",
+       "description": ""
+      },
+      {
+       "name": "White anchovies in vinegar",
+       "description": ""
+      },
+      {
+       "name": "Roasted red peppers with goat cheese",
+       "description": ""
+      },
+      {
+       "name": "Spanish potato salad",
+       "description": ""
+      },
+      {
+       "name": "Cantaloupe wrapped in Serrano ham",
+       "description": ""
+      },
+      {
+       "name": "Marinated white bean salad",
+       "description": ""
+      },
+      {
+       "name": "Smoked salmon pintxos",
+       "description": "Toasted baguette with whipped herb cheese, smoked salmon, capers, dill & lemon zest"
+      }
+     ]
+    },
+    {
+     "name": "Hot options",
+     "note": "",
+     "items": [
+      {
+       "name": "Patatas bravas with spicy tomato aioli",
+       "description": ""
+      },
+      {
+       "name": "Shrimp in garlic, chili crunch and oil",
+       "description": ""
+      },
+      {
+       "name": "Spanish meatballs",
+       "description": ""
+      },
+      {
+       "name": "Grilled anchovies",
+       "description": ""
+      },
+      {
+       "name": "Ham croquettes",
+       "description": ""
+      },
+      {
+       "name": "Chicken croquettes",
+       "description": ""
+      },
+      {
+       "name": "Manchego stuffed mushrooms",
+       "description": ""
+      },
+      {
+       "name": "Red wine braised chorizo",
+       "description": ""
+      },
+      {
+       "name": "Grilled octopus with red wine and lemon reduction",
+       "description": ""
+      },
+      {
+       "name": "Calamari",
+       "description": ""
+      },
+      {
+       "name": "Garlic roasted mushrooms",
+       "description": ""
+      },
+      {
+       "name": "Mini paella cups",
+       "description": ""
+      },
+      {
+       "name": "Bacon wrapped dates",
+       "description": ""
+      },
+      {
+       "name": "Mussels in red or white wine",
+       "description": ""
+      },
+      {
+       "name": "Pinchos morunos",
+       "description": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vegetarian",
+   "title": "Vegetarian",
+   "blurb": "A three-course vegetarian menu of seasonal vegetable starters, mains and desserts.",
+   "selectionNote": "Price depends on the number of courses you choose and your guest count.",
+   "courses": [
+    {
+     "name": "Starters",
+     "note": "Choose 2",
+     "items": [
+      {
+       "name": "Charred pineapple and black bean tostaditos with avocado crema and chipotle lime drizzle",
+       "description": ""
+      },
+      {
+       "name": "Grilled asparagus crostini on sourdough with bourbon onion jam, roasted cherry tomatoes and horseradish cream",
+       "description": ""
+      },
+      {
+       "name": "Grilled peach and corn bruschetta",
+       "description": "Roasted corn puree, grilled peaches and smoked chiles. Toasted sourdough"
+      },
+      {
+       "name": "Fried green tomatoes with remoulade and fresh herbs",
+       "description": ""
+      },
+      {
+       "name": "Crispy polenta with pimento cheese, pepper jelly and crispy shallots.",
+       "description": ""
+      },
+      {
+       "name": "Truffle goat cheese puff pastry",
+       "description": ""
+      },
+      {
+       "name": "Smoked carrot tartlet with whipped feta, honey and dill pollen",
+       "description": ""
+      },
+      {
+       "name": "Saffron arancini bites",
+       "description": ""
+      },
+      {
+       "name": "White asparagus with citrus hollandaise and herbs",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Mains",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Delicata squash with whipped ricotta, pomegranate and hazelnut dukkah",
+       "description": ""
+      },
+      {
+       "name": "Sunchoke risotto",
+       "description": ""
+      },
+      {
+       "name": "Pumpkin ravioli with sage brown butter",
+       "description": ""
+      },
+      {
+       "name": "Eggplant roulade with tomato cream sauce",
+       "description": ""
+      },
+      {
+       "name": "Stuffed savoy cabbage with lentils, mushrooms and red wine reduction",
+       "description": ""
+      },
+      {
+       "name": "Roasted romanesco with saffron cauliflower cream and pine nut gremolata",
+       "description": ""
+      },
+      {
+       "name": "Charred cauliflower steaks with parsnip puree, caramelized pearl onions, golden raisins and toasted pine nuts",
+       "description": ""
+      }
+     ]
+    },
+    {
+     "name": "Desserts",
+     "note": "Choose 1",
+     "items": [
+      {
+       "name": "Chocolate olive oil cake, salted caramel and espresso crumble",
+       "description": ""
+      },
+      {
+       "name": "Vanilla bean panna cotta with roasted strawberries",
+       "description": ""
+      },
+      {
+       "name": "Lemon panna cotta with brandy macerated figs",
+       "description": ""
+      },
+      {
+       "name": "Mini key lime tarts",
+       "description": ""
+      },
+      {
+       "name": "White chocolate cheesecake with blackberry compote and almond crumble",
+       "description": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "typosFixed": [
+  "papatas bravas with spicy tomato aioli -> patatas bravas with spicy tomato aioli",
+  "Grilled peach and corm bruschetta -> Grilled peach and corn bruschetta",
+  "Veal Osso Bucco -> Veal Osso Buco",
+  "traditional tiramisu (missing bullet in source) -> treated as its own Dolce item alongside the other bulleted desserts",
+  "Citrus & almond  flour semolina cake -> Citrus & almond flour semolina cake (double space)",
+  "...parsley and  white wine -> ...parsley and white wine (double space, Champiñones al Ajillo)",
+  "Ensalada Mixta –  lettuce, tomatoes... -> Ensalada Mixta – lettuce, tomatoes... (double space)",
+  "Butternut Squash Bisque-  Brown butter -> Butternut Squash Bisque – Brown butter (double space)",
+  "key lime leche de tigre,  watermelon -> key lime leche de tigre, watermelon (double space)",
+  "Caribbean spiced pork  polenta bite -> Caribbean spiced pork polenta bite (double space)",
+  "key lime pie with toasted  meringue -> key lime pie with toasted meringue (double space)",
+  "Albondigas -> Albóndigas (missing accent; source uses accents elsewhere, e.g. Jamón, Padrón)",
+  "Iberico ham with manchego cheese -> Ibérico ham with manchego cheese (missing accent; source writes Jamón Ibérico in the Tour of Spain menu)",
+  "Jalapeno popper potato salad -> Jalapeño popper potato salad (missing tilde; source writes jalapeño aioli elsewhere)",
+  "pan con tomate (toasted bread with roasted tomatoes, garlic and EVOO -> pan con tomate (toasted bread with roasted tomatoes, garlic and EVOO) (missing closing parenthesis)",
+  "Gazpacho – Chilled tomato and vegetable soup, -> Gazpacho – Chilled tomato and vegetable soup (stray trailing comma)",
+  "Chilled shellfish raw bar. -> Chilled shellfish raw bar (stray trailing period on a list item)",
+  "Price will depend on number of total selections: -> Price will depend on number of total selections. (trailing colon before a list header)",
+  "Trailing spaces at the end of many lines -> trimmed throughout"
+ ],
+ "ambiguities": [
+  "Brunch, Breakfast items: \"French toast\" is listed twice (once plain, once again later in the same list). I included it once. Confirm whether the second entry was meant to be a different dish (e.g. a specific variation) or is a duplicate.",
+  "Brunch, Breakfast items: \"Bagels\", \"Lox\" and \"Cream cheese\" are listed as three separate items. Confirm whether they should be one combined item (\"Bagels with lox and cream cheese\") or remain separate selections.",
+  "Brunch, Breakfast items: \"Eggs\" is listed with no preparation. Confirm whether this means eggs any style, and whether it should say so on the site.",
+  "Brunch: \"Extra: Chilled shellfish raw bar\" — confirm whether this is a course, an add-on with separate pricing, or a note. No price or minimum was given.",
+  "Brunch: no per-course selection counts are given anywhere (only \"Menu price per person will depend on total items selected\"). Confirm whether guests pick freely from every section.",
+  "Tour of Spain, Mains: \"Paella Valenciana ... (4-8 guests only)\" — the guest-count restriction is currently kept inside the dish description. Confirm whether it should be displayed as a separate availability note.",
+  "Tour of Spain: \"Gazpacho – Chilled tomato and vegetable soup,\" ends mid-sentence with a comma in the source, so the description may be truncated. Confirm the intended full text.",
+  "Tour of Spain, Starters: \"Croquetas ... filled with choice of ham, chicken, cod, or mushrooms\" requires a second choice from the guest. Confirm how that should be presented.",
+  "Tour of Spain: there is no overall pricing/selection line for this menu (unlike Italian feast and Spanish tapas). Confirm whether the standard pricing note should be added.",
+  "Wild game, First course: \"Roasted Corn Chowder- Duck Confit\" is followed on the next line by \"Charred corn relish, smoked paprika, chive oil\". I merged both into one description (\"Duck Confit, charred corn relish, smoked paprika, chive oil\"). Confirm whether \"Duck Confit\" belongs in the dish name instead.",
+  "Wild game, Mains and Desserts: dish names and garnish lines are on separate lines with no dash separator. I treated the second line as the description in every case. Confirm that reading.",
+  "Italian feast, Primi: \"Tagliatelle al Funghi\" and \"Linguine alla vongole\" — standard Italian would be \"ai funghi\" and \"alle vongole\". Left exactly as written since it may be intentional; confirm before publishing.",
+  "Italian feast, Dolce: three tiramisu variants are listed (date and pistachio, traditional, strawberry basil). Confirm all three should appear.",
+  "Italian feast: \"Insalata\" appears after \"Secondi\" in the source. Confirm the intended display order of courses.",
+  "Key west inspired, Starters: \"citrus supreme\" is likely the culinary term \"suprême\" (citrus segments). Left as written; confirm.",
+  "Several menus mix sentence case and lowercase dish names (e.g. \"honey roasted pears...\", \"strawberry basil tiramisu\"). I preserved the chef's casing exactly; confirm whether names should be normalized for the website.",
+  "Spanish tapas and Brunch have no per-course selection counts, unlike the other menus. Confirm whether minimums apply (e.g. a minimum number of tapas per guest)."
+ ]
+}
