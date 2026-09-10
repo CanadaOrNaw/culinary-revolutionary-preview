@@ -27,6 +27,18 @@ thank-you page; malformed or unconfirmed responses show the contact fallback.
 
 ## Remaining launch gates
 
+Production code deployed successfully in commit `a505ffb` (Actions run
+`34457479437`). Local browser tests passed for confirmed, rejected, missing,
+malformed and null API responses, plus mobile width and menu preselection.
+All 81 local HTML references/fragments resolved.
+
+Live browser submission could not complete: Web3Forms rejected the OPTIONS
+preflight with HTTP 403 and a message about server-IP use requiring a Pro plan.
+The same rejection occurs for both apex and www origins, before the form key
+is sent. This test connection cannot establish inbox delivery. Do not change
+providers or buy Pro on that basis; the next check is a submission in the user's
+normal browser, followed by mailbox receipt and reply-to confirmation.
+
 1. User creates Web3Forms form:
    - Name: Website Inquiries
    - Website URL: https://culinary-revolutionary.com/
