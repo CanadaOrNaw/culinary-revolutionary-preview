@@ -107,7 +107,7 @@ page = f'''<!DOCTYPE html>
     .social-links a {{ display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; }}
     .social-links svg {{ display: block; width: 20px; height: 20px; fill: currentColor; }}
   </style>
-  <link rel="stylesheet" href="styles.css?v=20260902-1" />
+  <link rel="stylesheet" href="styles.css?v=20260910-blog" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -150,7 +150,7 @@ page = f'''<!DOCTYPE html>
   </main>
 
 {footer}
-  <script src="script.js?v=20260910-1"></script>
+  <script src="script.js?v=20260910-blog"></script>
 </body>
 </html>
 '''

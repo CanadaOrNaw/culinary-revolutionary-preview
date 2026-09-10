@@ -7,6 +7,9 @@ A dependency-free static site. No build step, no framework: open `index.html` an
 - `thank-you.html` — post-submission confirmation
 - `styles.css`, `script.js` — the site
 - `robots.txt`, `sitemap.xml` — crawl control
+- `blog/` — generated public blog index, articles and RSS feed
+- `content/blog/` — one JSON metadata file and matching HTML article per post
+- `build-blog.py` — builds blog pages, homepage preview, RSS and sitemap
 - `public/assets/` — locally copied imagery (`ASSET-SOURCES.json` records provenance)
 - `DESIGN.md` — extracted design system
 
@@ -74,7 +77,32 @@ Edit `menus.json` and re-run, rather than editing `menus.html` directly — a ha
 lost the next time the generator runs. `build-menus.py` and `menus.json` are excluded from
 the deployed artifact.
 
-## Deployment
+## Weekly blog publishing
+
+Add a matching `content/blog/slug.json` and `content/blog/slug.html`, following the
+first article's fields. Use the real publication and modification dates, an
+existing licensed local image, a useful descriptive title, a unique description,
+and links to relevant menus and the inquiry form. Use Culinary Revolutionary as
+the organization author unless the chef actually authors or approves a personal
+byline. Do not invent service cities, prices, reviews, awards or event stories.
+
+Run `python3 build-blog.py` and `python3 build-menus.py`, then check local links,
+mobile navigation, article metadata and the inquiry route. Commit the sources and
+generated pages together. The Pages workflow also rebuilds the blog before staging.
+Drafts dated in the future are excluded; date-gating is not an automatic publishing
+schedule. A future publication still needs a build/deploy. Removing an already
+published article requires explicitly removing its generated directory as well.
+
+Articles have crawlable HTML, canonical URLs, social metadata, BlogPosting and
+breadcrumb structured data, and inclusion in the sitemap and RSS feed. No ranking
+or rich-result guarantee is made. Guidance:
+https://developers.google.com/search/docs/appearance/structured-data/article
+
+Billing, weekly task dates and GBP access/verification notes are private operations
+records outside this repository. No invoices or customer account files are staged
+on the public site. Weekly posting and invoice sending remain manual tasks.
+
+## Deployment workflow
 
 Pushes to `main` deploy to GitHub Pages via `.github/workflows/deploy-pages.yml`. The
 workflow stages only the shipping files into `_site/` — it does not upload the repo root.

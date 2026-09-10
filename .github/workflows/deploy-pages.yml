@@ -24,6 +24,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v7
 
+      - name: Build the blog and sitemap
+        run: python3 build-blog.py
+
       # Stage only the files that belong on a public business domain.
       # Uploading the repo root would also publish README.md, DESIGN.md,
       # ASSET-SOURCES.json and the menu generator — build notes and tooling,
@@ -33,6 +36,7 @@ jobs:
           mkdir -p _site/public/assets
           cp index.html menus.html thank-you.html styles.css script.js _site/
           cp favicon.ico robots.txt sitemap.xml _site/
+          cp -r blog _site/blog
           cp .nojekyll _site/
           # CNAME is only present after the custom domain cutover.
           [ -f CNAME ] && cp CNAME _site/ || true
