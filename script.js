@@ -10,7 +10,7 @@
      mailto: draft — the button is never dead.
      =============================================================== */
   const KEY_PLACEHOLDER = "PASTE_WEB3FORMS_ACCESS_KEY_HERE";
-  const FALLBACK_EMAIL = "chef.jbmartin67@gmail.com";
+  const FALLBACK_EMAIL = "chef@culinary-revolutionary.com";
   const THANK_YOU_URL = "thank-you.html";
 
   /* ---------------------------------------------------------------
@@ -212,8 +212,10 @@
       if (!response.ok) throw new Error(`Form endpoint returned ${response.status}`);
 
       // Web3Forms reports failures in the body with HTTP 200.
-      const result = await response.json().catch(() => ({ success: true }));
-      if (result.success === false) throw new Error(result.message || "Submission rejected");
+      const result = await response.json();
+      if (!result || result.success !== true) {
+        throw new Error(result?.message || "Submission was not confirmed");
+      }
 
       window.location.href = THANK_YOU_URL;
     } catch (error) {

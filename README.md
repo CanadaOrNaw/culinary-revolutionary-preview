@@ -44,20 +44,21 @@ How it behaves once the key is set:
 4. If JavaScript never loads, the plain HTML `POST` still works — the hidden
    `access_key`, `subject` and `redirect` inputs carry it.
 
-**To change the destination inbox** (e.g. from the Gmail to a business address): request a
+**Destination inbox:** `chef@culinary-revolutionary.com` (Namecheap Private Email).
+The mailbox is created and the Web3Forms key is installed. Inbox receipt and
+reply-to behavior still need confirmation from the mailbox owner.
+
+**To change the destination inbox:** request a
 new key at <https://web3forms.com> against the new address and replace that one value.
 Nothing else changes — no DNS, no SPF/DKIM, because Web3Forms sends *to* the address, not
 *as* the domain. Note that the new address must already be able to *receive* mail (i.e. the
 domain needs working MX records) before a key can be issued against it.
 
-### At the custom-domain cutover
+### Production domain
 
-The hidden `redirect` input currently points at the `github.io` origin, because Web3Forms'
-free plan requires the redirect to be on the same origin that served the form. When the
-custom domain goes live, change it to
-`https://www.culinary-revolutionary.com/thank-you.html`. This only affects visitors with
-JavaScript disabled — the normal path redirects itself — but it will silently stop working
-if it is missed.
+The live canonical URL is `https://culinary-revolutionary.com/`; `www` redirects
+there. HTTPS is enforced. The hidden form redirect uses
+`https://culinary-revolutionary.com/thank-you.html`, including without JavaScript.
 
 ## Regenerating the menus
 

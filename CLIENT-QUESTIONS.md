@@ -26,8 +26,8 @@ chef's Airbnb service listing. More detail would make them more credible:
 region without inventing individual cities. What is the normal travel radius? Is there
 a distance beyond which there's a travel fee?
 
-**Where inquiries should go.** Right now: `chef.jbmartin67@gmail.com`. Keep it, or switch
-to a new business address on the domain?
+**Inquiry destination — decided.** `chef@culinary-revolutionary.com` on Namecheap
+Private Email. The mailbox has been created. Finish Web3Forms setup and confirm delivery.
 
 **Response time.** Is there a response-time commitment we can state? The launch build
 does not promise one until it is confirmed.
