@@ -100,7 +100,12 @@ https://developers.google.com/search/docs/appearance/structured-data/article
 
 Billing, weekly task dates and GBP access/verification notes are private operations
 records outside this repository. No invoices or customer account files are staged
-on the public site. Weekly posting and invoice sending remain manual tasks.
+on the public site. Since September 10, 2026, Aegis has an owner-authorized external
+cron to write, validate and publish a weekly article on Thursdays at 09:00
+America/Toronto, beginning September 17. That task follows the private Aegis
+workflow; it is not a GitHub scheduled content generator. An independent Telegram
+reminder announces the run, followed by a verified live-link or failure report.
+Invoice sending remains manual. Routine articles must still pass the checks above.
 
 ## Deployment workflow
 
