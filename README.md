@@ -45,8 +45,9 @@ How it behaves once the key is set:
    `access_key`, `subject` and `redirect` inputs carry it.
 
 **Destination inbox:** `chef@culinary-revolutionary.com` (Namecheap Private Email).
-The mailbox is created and the Web3Forms key is installed. Inbox receipt and
-reply-to behavior still need confirmation from the mailbox owner.
+The mailbox is created and the Web3Forms key is installed. The user confirmed the
+live inquiry test worked on 2026-09-10. DKIM DNS publication is verified; reply-to
+behavior has not been separately confirmed.
 
 **To change the destination inbox:** request a
 new key at <https://web3forms.com> against the new address and replace that one value.
